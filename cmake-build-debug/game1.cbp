@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="game1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dynashot-1.0.0">
+				<Option output="E:/C++ Projects/Dynashot C++/cmake-build-debug/Dynashot-1.0.0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/C++ Projects/Dynashot C++/$PROJECT_DIR/res"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dynashot-1.0.0"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dynashot-1.0.0/fast">
+				<Option output="E:/C++ Projects/Dynashot C++/cmake-build-debug/Dynashot-1.0.0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/C++ Projects/Dynashot C++/$PROJECT_DIR/res"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dynashot-1.0.0/fast"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/C++ Projects/Dynashot C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/raylib/mingw/bin/mingw32-make.exe -f &quot;E:/C++ Projects/Dynashot C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Assets.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Assets.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Game.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Game.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Launcher.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Map.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Map.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/MapReader.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/MapReader.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Worlds.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/Worlds.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/controlsState.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/controlsState.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/gameState.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/gameState.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/settingsState.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/settingsState.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/titleState.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/titleState.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

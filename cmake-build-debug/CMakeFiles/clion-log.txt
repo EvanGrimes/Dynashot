@@ -1,0 +1,4 @@
+"E:\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "E:\C++ Projects\Dynashot C++"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/C++ Projects/Dynashot C++/cmake-build-debug

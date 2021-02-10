@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/C++ Projects/Dynashot C++/Assets.cpp
+raylib.h
+-
+iostream
+-
+
+E:/C++ Projects/Dynashot C++/Launcher.cpp
+titleState.cpp
+E:/C++ Projects/Dynashot C++/titleState.cpp
+raylib.h
+-
+
+E:/C++ Projects/Dynashot C++/titleState.cpp
+raylib.h
+E:/C++ Projects/Dynashot C++/raylib.h
+Assets.cpp
+E:/C++ Projects/Dynashot C++/Assets.cpp
+
