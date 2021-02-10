@@ -30,7 +30,13 @@ void gameState::tick() {
 
         if (currentFrame > 5) currentFrame = 0;
     }
-    UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
+    //if(!checkCollision()){
+        UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
+    //}
+    //else{
+
+    //}
+
     Game::camera.target.x = player.position.x;
     Game::camera.target.y = player.position.y;
     render();

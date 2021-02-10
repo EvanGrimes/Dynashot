@@ -54,11 +54,13 @@ void Map::DrawMap() {
         destRect.y = x * 32;
             switch(mapReader.mapTileData[x * 24 + y]) {
             case '0':
-                DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                //DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
 
                 break;
             case '1':
-                DrawTextureRec(Assets::rock, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                DrawRectangleRec(destRect, PURPLE);
+                //DrawTextureRec(Assets::rock, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+
                 break;
             case '2':
                 DrawTextureRec(Assets::rockBig, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
@@ -88,10 +90,11 @@ void Map::DrawMap() {
                 DrawTextureRec(Assets::treeTrunk, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                 break;
             case 'w':
-                DrawTextureRec(Assets::water, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                DrawRectangleRec(destRect, BLUE);
+                //DrawTextureRec(Assets::water, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                 break;
             default:
-                DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                //DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                 break;
         }
         }

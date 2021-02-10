@@ -1,6 +1,6 @@
 #include "MapReader.h"
 #include <raylib.h>
-#include <stdio.h>
+#include <cstdio>
 
 void MapReader::readMapData() {
     char *buffer = LoadFileText("../res/worlds/test.txt");
@@ -9,7 +9,7 @@ void MapReader::readMapData() {
     while (*p != '\0') {
         if (*p != '\n') {
                 if (x >= mapSize) {
-                    printf("MAP TO BIG");
+                    printf("MAP TOO BIG");
                     break;
             }
             mapTileData[x++] = *p;
@@ -32,11 +32,10 @@ void MapReader::setMapCollision() {
                     //Rock
                     count++;
                     if(count >= MapReader::mapSize){
-                        printf("TOO BIG");
+                        //printf("TOO BIG");
                         break;
                     }
-                    printf("%d\n", count);
-                    collision[count] = {destRect.x, destRect.y ,31, 29};
+                    collision[count] = {destRect.x, destRect.y ,35, 35};
 
                     break;
                 case '2':
@@ -64,21 +63,13 @@ void MapReader::setMapCollision() {
                     //Dead Tree?
 
                     break;
-                case 10:
+                case 'r':
                     //Tree Trunk
                     break;
                 case 'w':
                     //Water
                     count++;
-                    if(count >= MapReader::mapSize){
-                        //printf("TOO BIG");
-                        //break;
-                    }
-                    printf("%d\n", count);
-                    collision[count] = {destRect.x, destRect.y ,31, 29};
-                    printf("X: %f\n Y: %f\n", collision[count].x, collision[count].y);
-                    //count++ ;
-                    //collision[count] = {destRect.x, destRect.y, 32, 32};
+                    collision[count] = {destRect.x, destRect.y ,35, 35};
                     break;
                 default:
                     break;
