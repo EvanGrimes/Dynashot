@@ -48,5 +48,10 @@
   "directory": "E:/C++ Projects/Dynashot C++/cmake-build-debug",
   "command": "C:\\raylib\\mingw\\bin\\g++.exe   @CMakeFiles/Dynashot-1.0.0.dir/includes_CXX.rsp -g   -Wall -Wextra -std=c++17 -o CMakeFiles\\Dynashot-1.0.0.dir\\MapReader.cpp.obj -c \"E:\\C++ Projects\\Dynashot C++\\MapReader.cpp\"",
   "file": "E:/C++ Projects/Dynashot C++/MapReader.cpp"
+},
+{
+  "directory": "E:/C++ Projects/Dynashot C++/cmake-build-debug",
+  "command": "C:\\raylib\\mingw\\bin\\g++.exe   @CMakeFiles/Dynashot-1.0.0.dir/includes_CXX.rsp -g   -Wall -Wextra -std=c++17 -o CMakeFiles\\Dynashot-1.0.0.dir\\Tiles.cpp.obj -c \"E:\\C++ Projects\\Dynashot C++\\Tiles.cpp\"",
+  "file": "E:/C++ Projects/Dynashot C++/Tiles.cpp"
 }
 ]

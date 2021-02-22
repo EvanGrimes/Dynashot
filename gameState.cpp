@@ -20,7 +20,28 @@ gameState gameState;
 
 
 void gameState::tick() {
-    playerRect = { player.position.x, player.position.y, 40, 40 };
+    for(count = 0; count < MapReader::mapSize; count++) {
+        if (CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
+            if(!CheckCollisionPointRec((Vector2){player.position.x - 1, player.position.y}, map.mapReader.collision[count]))
+            {
+                if(lastAnim == "right"){
+                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                }
+                if(lastAnim == "left"){
+                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                }
+            }
+            else{
+                if(lastAnim == "left"){
+                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                }
+                if(lastAnim == "right"){
+                    playerRect = {player.position.x - 10, player.position.y + 10, 18, 20};
+                }
+            }
+        }
+    }
+
     float deltaTime = GetFrameTime();
     framesCounter++;
     if (framesCounter >= (60/framesSpeed))
@@ -30,13 +51,7 @@ void gameState::tick() {
 
         if (currentFrame > 5) currentFrame = 0;
     }
-    //if(!checkCollision()){
-        UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
-    //}
-    //else{
-
-    //}
-
+    UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
     Game::camera.target.x = player.position.x;
     Game::camera.target.y = player.position.y;
     render();
@@ -44,9 +59,14 @@ void gameState::tick() {
 }
 
 void gameState::render() {
+
     ClearBackground(WHITE);
+
     map.DrawMap();
-    DrawTexture(getLastAnim(), playerRect.x, playerRect.y, WHITE);
+    DrawRectangleRec(playerRect, BLUE);
+    DrawTexture(getLastAnim(), player.position.x, player.position.y, WHITE);
+
+
 }
 
 Texture2D gameState::getLastAnim(){

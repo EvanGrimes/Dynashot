@@ -299,6 +299,33 @@ MapReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.s
 .PHONY : MapReader.cpp.s
 
+Tiles.obj: Tiles.cpp.obj
+
+.PHONY : Tiles.obj
+
+# target to build an object file
+Tiles.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.obj
+.PHONY : Tiles.cpp.obj
+
+Tiles.i: Tiles.cpp.i
+
+.PHONY : Tiles.i
+
+# target to preprocess a source file
+Tiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.i
+.PHONY : Tiles.cpp.i
+
+Tiles.s: Tiles.cpp.s
+
+.PHONY : Tiles.s
+
+# target to generate assembly for a file
+Tiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.s
+.PHONY : Tiles.cpp.s
+
 Worlds.obj: Worlds.cpp.obj
 
 .PHONY : Worlds.obj
@@ -460,6 +487,9 @@ help:
 	@echo ... MapReader.obj
 	@echo ... MapReader.i
 	@echo ... MapReader.s
+	@echo ... Tiles.obj
+	@echo ... Tiles.i
+	@echo ... Tiles.s
 	@echo ... Worlds.obj
 	@echo ... Worlds.i
 	@echo ... Worlds.s

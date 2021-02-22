@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj"
+  "CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/Worlds.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj"

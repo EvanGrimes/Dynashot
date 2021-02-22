@@ -9,7 +9,7 @@ project(game1)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(Dynashot-1.0.0
-        Launcher.cpp Assets.cpp Assets.h titleState.cpp titleState.h gameState.cpp gameState.h Game.cpp Game.h controlsState.cpp controlsState.h settingsState.cpp settingsState.h Map.h Map.cpp Worlds.cpp Worlds.h MapReader.cpp MapReader.h)
+        Launcher.cpp Assets.cpp Assets.h titleState.cpp titleState.h gameState.cpp gameState.h Game.cpp Game.h controlsState.cpp controlsState.h settingsState.cpp settingsState.h Map.h Map.cpp Worlds.cpp Worlds.h MapReader.cpp MapReader.h Tiles.cpp Tiles.h)
 target_link_libraries(Dynashot-1.0.0 PRIVATE raylib)
 target_link_libraries(Dynashot-1.0.0 PRIVATE winmm)
 

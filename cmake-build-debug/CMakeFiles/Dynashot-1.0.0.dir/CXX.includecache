@@ -12,29 +12,27 @@ raylib.h
 iostream
 -
 
-E:/C++ Projects/Dynashot C++/Map.cpp
-Map.h
-E:/C++ Projects/Dynashot C++/Map.h
-
-E:/C++ Projects/Dynashot C++/Map.h
+E:/C++ Projects/Dynashot C++/MapReader.cpp
+MapReader.h
+E:/C++ Projects/Dynashot C++/MapReader.h
+raylib.h
+-
 Assets.h
 E:/C++ Projects/Dynashot C++/Assets.h
-Worlds.h
-E:/C++ Projects/Dynashot C++/Worlds.h
-fstream
+cstdio
 -
+
+E:/C++ Projects/Dynashot C++/MapReader.h
 raylib.h
+-
+Tiles.h
+E:/C++ Projects/Dynashot C++/Tiles.h
+
+E:/C++ Projects/Dynashot C++/Tiles.h
+raylib.h
+-
+iostream
 -
 string
 -
-sstream
--
-MapReader.h
-E:/C++ Projects/Dynashot C++/MapReader.h
-
-E:/C++ Projects/Dynashot C++/MapReader.h
-raylib.h
--
-
-E:/C++ Projects/Dynashot C++/Worlds.h
 

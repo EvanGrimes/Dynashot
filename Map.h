@@ -14,11 +14,6 @@
 
 class Map{
 public:
-    //gameState gameState;
-
-    int count = 0;
-    //int row;
-    //int column;
 
     Map();
     //~Map();
@@ -26,8 +21,6 @@ public:
     //void LoadMap(std::string path, int sizeX, int sizeY);
     void LoadMap(int arr[25][25]);
     void DrawMap();
-    //static void AddTile(int id, int x, int y);
-
 private:
     Rectangle sourceRec, destRect;
 

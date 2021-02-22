@@ -32,24 +32,27 @@ public:
     int framesSpeed = 8;
     int currentFrame = 0;
     bool Moving;
-    bool hitObject;
-    //void checkCollision();
     int count = 0;
     std::string lastAnim;
-    Rectangle playerRect = { player.position.x, player.position.y, 40, 40 };
+    Rectangle playerRect = {  player.position.x , player.position.y + 20, 20, 20};
     void startPlayer() {
-        player = {0};
+        player = {{0, 0}, 0};
         player.position = (Vector2) {Assets::screenWidth/2, Assets::screenHeight/2};
         player.speed = 0;
     }
 
     bool checkCollision() {
         for(count = 0; count < MapReader::mapSize; count++){
-            if(CheckCollisionPointRec((Vector2){map.mapReader.collision[count].x, map.mapReader.collision[count].y }, playerRect)) {
+            /*if(CheckCollisionPointRec((Vector2){map.mapReader.collision[count].x, map.mapReader.collision[count].y }, playerRect)) {
+                printf("COLLISION\n");
+                return true;
+            }*/
+            playerRect = { player.position.x + 10, player.position.y + 10, 18, 20 };
+            if(CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
                 printf("COLLISION\n");
                 return true;
             }
-            //DrawRectangleRec(map.mapReader.collision[count], RED);
+            DrawRectangleRec(map.mapReader.collision[count], RED);
         }
         return false;
     }
@@ -118,19 +121,6 @@ public:
                 p->y = ei->rect.y;
             }
         }
-
-
-        //if(CheckCollisionPointRec(player->position, map.collision[(map.row * map.column) + map.column]))
-        //{
-        //    printf("COLLISION HIT!");
-        //}
-        // if (!hitObstacle)
-        //{
-        //    player->position.y += player->speed*delta;
-       //     player->speed += G*delta;
-       //     player->canJump = false;
-       // }
-        //else player->canJump = true;
     }
 };
 
