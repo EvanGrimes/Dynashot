@@ -36,7 +36,7 @@ while (!WindowShouldClose()){
         EndMode2D();
     }
     if(Assets::type == "pause"){
-
+        ClearBackground(RAYWHITE);
     }
     if(Assets::type == "settings"){
         //ClearBackground(LIME);

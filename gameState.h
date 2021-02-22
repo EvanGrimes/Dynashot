@@ -41,12 +41,33 @@ public:
         player.speed = 0;
     }
 
+
+    void movePlayerCollider(){
+        for(count = 0; count < MapReader::mapSize; count++) {
+            if (CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
+                if(!CheckCollisionPointRec((Vector2){player.position.x - 1, player.position.y}, map.mapReader.collision[count]))
+                {
+                    if(lastAnim == "right"){
+                        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                    }
+                    if(lastAnim == "left"){
+                        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                    }
+                }
+                else{
+                    if(lastAnim == "left"){
+                        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                    }
+                    if(lastAnim == "right"){
+                        playerRect = {player.position.x - 10, player.position.y + 10, 18, 20};
+                    }
+                }
+            }
+        }
+    }
+
     bool checkCollision() {
         for(count = 0; count < MapReader::mapSize; count++){
-            /*if(CheckCollisionPointRec((Vector2){map.mapReader.collision[count].x, map.mapReader.collision[count].y }, playerRect)) {
-                printf("COLLISION\n");
-                return true;
-            }*/
             playerRect = { player.position.x + 10, player.position.y + 10, 18, 20 };
             if(CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
                 printf("COLLISION\n");
@@ -55,6 +76,15 @@ public:
             DrawRectangleRec(map.mapReader.collision[count], RED);
         }
         return false;
+    }
+
+    bool checkPausePress(){
+        if(IsKeyPressed(KEY_ESCAPE)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     void UpdatePlayer(Player *player, EnvItem *envItems, int envItemsLength, float delta)

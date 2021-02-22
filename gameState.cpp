@@ -20,28 +20,10 @@ gameState gameState;
 
 
 void gameState::tick() {
-    for(count = 0; count < MapReader::mapSize; count++) {
-        if (CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
-            if(!CheckCollisionPointRec((Vector2){player.position.x - 1, player.position.y}, map.mapReader.collision[count]))
-            {
-                if(lastAnim == "right"){
-                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
-                }
-                if(lastAnim == "left"){
-                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
-                }
-            }
-            else{
-                if(lastAnim == "left"){
-                    playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
-                }
-                if(lastAnim == "right"){
-                    playerRect = {player.position.x - 10, player.position.y + 10, 18, 20};
-                }
-            }
-        }
+    if(checkPausePress()){
+        printf("PAUSE\n");
+        Assets::type = "pause";
     }
-
     float deltaTime = GetFrameTime();
     framesCounter++;
     if (framesCounter >= (60/framesSpeed))
@@ -52,10 +34,10 @@ void gameState::tick() {
         if (currentFrame > 5) currentFrame = 0;
     }
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
+    movePlayerCollider();
     Game::camera.target.x = player.position.x;
     Game::camera.target.y = player.position.y;
     render();
-
 }
 
 void gameState::render() {
@@ -63,7 +45,7 @@ void gameState::render() {
     ClearBackground(WHITE);
 
     map.DrawMap();
-    DrawRectangleRec(playerRect, BLUE);
+    //DrawRectangleRec(playerRect, BLUE);
     DrawTexture(getLastAnim(), player.position.x, player.position.y, WHITE);
 
 

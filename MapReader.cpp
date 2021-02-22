@@ -52,6 +52,14 @@ void MapReader::setMapCollision() {
                     break;
                 case '5':
                     //Secret Bush
+                    if(count == 0){
+                        collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                        count++;
+                        break;
+                    }
+                    count++;
+                    collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                    break;
                     break;
                 case '6':
                     //Sign

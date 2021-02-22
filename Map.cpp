@@ -59,7 +59,6 @@ void Map::DrawMap() {
                 DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                 break;
             case '1':
-                //DrawRectangleRec(destRect, PURPLE);
                 DrawTextureRec(Assets::rock, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                 break;
             case '2':

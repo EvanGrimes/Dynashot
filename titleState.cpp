@@ -16,12 +16,6 @@ void titleState::tick()
     tickControlsBtn();
     tickExitBtn();
 
-    // Calculate button frame rectangle to draw depending on button state
-
-
-
-    // Draw
-
     ClearBackground(YELLOW);
     DrawTexture(Assets::titleScreen, 0, 0, WHITE);
     DrawFPS(10, 10);
@@ -63,7 +57,7 @@ void titleState::tickStartBtn() {
     else startBtnState = 0;
 
     if (startBtnAction) {
-        SetSoundVolume(Assets::buttonclick1, 0.06);
+        SetSoundVolume(Assets::buttonclick1, 0.6);
         PlaySound(Assets::buttonclick1);
         // Just set a thingy here
         std::cout << "Start button clicked\n" << std::endl;

@@ -1,8 +1,27 @@
-
 #include "Game.h"
 #include <raylib.h>
+#include <time.h>
+
+class timer {
+private:
+    unsigned long begTime;
+public:
+    void start() {
+        begTime = clock();
+    }
+
+    unsigned long elapsedTime() {
+        return ((unsigned long) clock() - begTime) / CLOCKS_PER_SEC;
+    }
+};
+
+
 int main()
 {
+    unsigned long seconds = 2;
+    timer t{};
+
+    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     Game game;
     InitWindow(Assets::screenWidth, Assets::screenHeight, "Test");
     SetExitKey(0);
@@ -14,7 +33,13 @@ int main()
     SetWindowIcon(Assets::icon);
     DrawTexture(Assets::splashScreen, 175, 0, WHITE);
     EndDrawing();
-    _sleep(1.4 * 1000);
+    //_sleep(1.4 * 1000);
+    t.start();
+    while(true) {
+        if(t.elapsedTime() >= seconds) {
+            break;
+        }
+    }
     Assets::type = "title";
     game.loop();
     CloseWindow();
