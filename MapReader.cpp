@@ -46,6 +46,14 @@ void MapReader::setMapCollision() {
                     break;
                 case '3':
                     //Bush
+                    if(count == 0){
+                        collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                        count++;
+                        break;
+                    }
+                    count++;
+                    collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                    break;
                     break;
                 case '4':
                     //Tall Bush

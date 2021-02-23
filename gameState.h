@@ -19,8 +19,6 @@ typedef struct EnvItem {
     Color color;
 } EnvItem;
 
-void UpdatePlayer(Player *player, EnvItem *envItems, int envItemsLength, float delta);
-
 class gameState {
 public:
     Map map;
@@ -48,27 +46,28 @@ public:
                 if(!CheckCollisionPointRec((Vector2){player.position.x - 1, player.position.y}, map.mapReader.collision[count]))
                 {
                     if(lastAnim == "right"){
-                        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                        playerRect = {player.position.x + 20, player.position.y + 10, 18, 20};
                     }
                     if(lastAnim == "left"){
                         playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
                     }
                 }
-                else{
-                    if(lastAnim == "left"){
-                        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
-                    }
-                    if(lastAnim == "right"){
-                        playerRect = {player.position.x - 10, player.position.y + 10, 18, 20};
-                    }
-                }
+                //else{
+                //    if(lastAnim == "left"){
+                //        playerRect = {player.position.x + 10, player.position.y + 10, 18, 20};
+                //    }
+                //    if(lastAnim == "right"){
+                //        playerRect = {player.position.x - 10, player.position.y + 10, 18, 20};
+                //    }
+                //}
             }
         }
     }
 
     bool checkCollision() {
         for(count = 0; count < MapReader::mapSize; count++){
-            playerRect = { player.position.x + 10, player.position.y + 10, 18, 20 };
+            //playerRect = { player.position.x + 10, player.position.y + 10, 18, 20 };
+
             if(CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
                 printf("COLLISION\n");
                 return true;
@@ -78,7 +77,37 @@ public:
         return false;
     }
 
-    bool checkPausePress(){
+    bool checkCollisionFuture() {
+        for(count = 0; count < MapReader::mapSize; count++){
+            if(lastAnim == "up" || "down"){
+                playerRect = { player.position.x + 10, player.position.y + 10, 9, 20 };
+            }
+            if(lastAnim == "right"){
+                playerRect = {player.position.x + 9, player.position.y + 10, 9, 20};
+            }
+            if(lastAnim == "left"){
+                playerRect = {player.position.x + 11, player.position.y + 10, 9, 20};
+            }
+                if(lastAnim == "left" || "down") {
+                    if (CheckCollisionRecs(map.mapReader.collision[count],
+                                           (Rectangle) {playerRect.x - 1, playerRect.y + 1, playerRect.width,
+                                                        playerRect.height})) {
+                        printf("COLLISION\n");
+                        return true;
+                    }
+                }
+                if(lastAnim == "right" || "up"){
+                   if(CheckCollisionRecs(map.mapReader.collision[count], (Rectangle){playerRect.x + 1, playerRect.y + 1, playerRect.width, playerRect.height})){
+                            printf("COLLISION\n");
+                            return true;
+                        }
+                }
+                DrawRectangleRec(map.mapReader.collision[count], RED);
+            }
+            return false;
+        }
+
+    static bool checkPausePress(){
         if(IsKeyPressed(KEY_ESCAPE)){
             return true;
         }
@@ -92,48 +121,74 @@ public:
         Moving = false;
         if (IsKeyDown(KEY_W)){
             if(!IsKeyDown(KEY_S)) {
-                Moving = true;
+                if(!checkCollisionFuture()) {
+                    Moving = true;
                     player->position.y -= PLAYER_HOR_SPD * delta;
                     lastAnim = "up";
-                if(checkCollision()){
-                    player->position.y += PLAYER_HOR_SPD * delta + 5;
                 }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    player->position.y += PLAYER_HOR_SPD * delta;
+                }
+
+                //if(checkCollision()){
+                //// /   player->position.y += PLAYER_HOR_SPD * delta + 5;
+                ///}
                 lastAnim = "up";
             }
         }
         if (IsKeyDown(KEY_S)) {
             if(!IsKeyDown(KEY_W)) {
-                Moving = true;
+                if(!checkCollisionFuture()) {
+                    Moving = true;
                     player->position.y += PLAYER_HOR_SPD * delta;
                     lastAnim = "down";
-                if(checkCollision()){
-                    player->position.y -= PLAYER_HOR_SPD * delta + 5;
                 }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    player->position.y -= PLAYER_HOR_SPD * delta;
+                }
+                //if(checkCollision()){
+                //    player->position.y -= PLAYER_HOR_SPD * delta + 5;
+                //}
 
-                lastAnim = "down";
+                //lastAnim = "down";
             }
         }
         if (IsKeyDown(KEY_A)) {
             if(!IsKeyDown(KEY_D)) {
-                Moving = true;
+                if(!checkCollisionFuture()) {
+                    Moving = true;
                     player->position.x -= PLAYER_HOR_SPD * delta;
                     lastAnim = "left";
-                if(checkCollision()){
-                    player->position.x += PLAYER_HOR_SPD * delta + 5;
                 }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    player->position.x += PLAYER_HOR_SPD * delta;
+                }
+                ///if(checkCollision()){
+               //     player->position.x += PLAYER_HOR_SPD * delta + 5;
+                //}
 
-                lastAnim = "left";
+                //lastAnim = "left";
             }
         }
 
         if (IsKeyDown(KEY_D)) {
             if(!IsKeyDown(KEY_A)) {
-                Moving = true;
-                player->position.x += PLAYER_HOR_SPD * delta;
-                lastAnim = "right";
-                if(checkCollision()){
-                    player->position.x -= PLAYER_HOR_SPD * delta + 5;
+                if(!checkCollisionFuture()) {
+                    Moving = true;
+                    player->position.x += PLAYER_HOR_SPD * delta;
+
+                    lastAnim = "right";
                 }
+                if(checkCollisionFuture()) {
+                    Moving = true;
+                    player->position.x -= PLAYER_HOR_SPD * delta;
+                }
+                //if(checkCollision()){
+                //    player->position.x -= PLAYER_HOR_SPD * delta + 5;
+                //}
             }
         }
 

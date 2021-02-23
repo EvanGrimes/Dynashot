@@ -68,6 +68,7 @@ namespace Assets
         buttonclick2 = LoadSound("../res/sounds/toggle_001.ogg");
         buttonclick3 = LoadSound("../res/sounds/minimize_004.ogg");
         buttonclick4 = LoadSound("../res/sounds/back.ogg");
+        titleSong = LoadMusicStream("../res/music/Staff_Roll.mp3");
         UnloadImage(startBtnImg);
         UnloadImage(startHoverImg);
         UnloadImage(sett_btnImg);
@@ -139,5 +140,6 @@ namespace Assets
         UnloadSound(buttonclick2);
         UnloadSound(buttonclick3);
         UnloadSound(buttonclick4);
+        UnloadMusicStream(titleSong);
     }
 }

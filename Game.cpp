@@ -10,6 +10,7 @@ while (!WindowShouldClose()){
     BeginDrawing();
     DrawFPS(10,10);
     if(Assets::type == "title"){
+        PlayMusicStream(Assets::titleSong);
         titleState.tick();
     }
     if(Assets::type == "game"){
@@ -17,7 +18,7 @@ while (!WindowShouldClose()){
             Assets::unloadTitle();
             Assets::loadGame();
             if(caminitvar == 0){
-                Game::camera = { 0 };
+                Game::camera = { {0, 0}, {0, 0}, 0, 0 };
                 Game::camera.target = (Vector2){ gameState.player.position.x + 20, gameState.player.position.y + 20 };
                 Game::camera.offset = (Vector2){ Assets::screenWidth/2, Assets::screenHeight/2 };
                 Game::camera.rotation = 0.0f;

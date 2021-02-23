@@ -4,6 +4,7 @@
 
 void titleState::tick()
 {
+    UpdateMusicStream(Assets::titleSong);
     // Update
     mousePoint = GetMousePosition();
     startBtnAction = false;
@@ -61,6 +62,7 @@ void titleState::tickStartBtn() {
         PlaySound(Assets::buttonclick1);
         // Just set a thingy here
         std::cout << "Start button clicked\n" << std::endl;
+        StopMusicStream(Assets::titleSong);
         Assets::type = "game";
     }
 }
@@ -114,6 +116,7 @@ void titleState::tickExitBtn() {
         SetSoundVolume(Assets::buttonclick3, 0.06);
         PlaySound(Assets::buttonclick3);
         std::cout << "Exit Button Clicked\n" << std::endl;
+        Assets::unloadTitle();
         Assets::type = "exit";
     }
 }

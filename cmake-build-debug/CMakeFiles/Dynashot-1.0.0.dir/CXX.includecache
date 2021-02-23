@@ -12,6 +12,10 @@ raylib.h
 iostream
 -
 
+E:/C++ Projects/Dynashot C++/Game.cpp
+Game.h
+E:/C++ Projects/Dynashot C++/Game.h
+
 E:/C++ Projects/Dynashot C++/Game.h
 raylib.h
 -
@@ -23,14 +27,6 @@ settingsState.h
 E:/C++ Projects/Dynashot C++/settingsState.h
 controlsState.h
 E:/C++ Projects/Dynashot C++/controlsState.h
-
-E:/C++ Projects/Dynashot C++/Launcher.cpp
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
-raylib.h
--
-time.h
--
 
 E:/C++ Projects/Dynashot C++/Map.h
 Assets.h
