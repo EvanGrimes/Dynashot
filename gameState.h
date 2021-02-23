@@ -79,25 +79,28 @@ public:
 
     bool checkCollisionFuture() {
         for(count = 0; count < MapReader::mapSize; count++){
-            if(lastAnim == "up" || "down"){
-                playerRect = { player.position.x + 10, player.position.y + 10, 9, 20 };
+            if(lastAnim == "down"){
+                playerRect = { player.position.x + 10, player.position.y +14, 9, 15 };
+            }
+            if(lastAnim == "up"){
+                playerRect = { player.position.x + 10, player.position.y + 14, 9, 15 };
             }
             if(lastAnim == "right"){
-                playerRect = {player.position.x + 9, player.position.y + 10, 9, 20};
+                playerRect = {player.position.x + 9, player.position.y + 14, 9, 15};
             }
             if(lastAnim == "left"){
-                playerRect = {player.position.x + 11, player.position.y + 10, 9, 20};
+                playerRect = {player.position.x + 11, player.position.y + 14, 9, 15};
             }
                 if(lastAnim == "left" || "down") {
                     if (CheckCollisionRecs(map.mapReader.collision[count],
-                                           (Rectangle) {playerRect.x - 1, playerRect.y + 1, playerRect.width,
+                                           (Rectangle) {playerRect.x - 1, playerRect.y - 1, playerRect.width,
                                                         playerRect.height})) {
                         printf("COLLISION\n");
                         return true;
                     }
                 }
                 if(lastAnim == "right" || "up"){
-                   if(CheckCollisionRecs(map.mapReader.collision[count], (Rectangle){playerRect.x + 1, playerRect.y + 1, playerRect.width, playerRect.height})){
+                   if(CheckCollisionRecs(map.mapReader.collision[count], (Rectangle){playerRect.x + 1, playerRect.y + 0.1f, playerRect.width, playerRect.height})){
                             printf("COLLISION\n");
                             return true;
                         }

@@ -34,12 +34,12 @@ void MapReader::setMapCollision() {
                 case '1':
                     //Rock
                     if(count == 0){
-                        collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                        collision[count] = {destRect.x + 4, destRect.y + 3,25, 28};
                         count++;
                         break;
                     }
                     count++;
-                    collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
+                    collision[count] = {destRect.x + 4, destRect.y + 3,25, 25};
                     break;
                 case '2':
                     //Big Rock

@@ -20,7 +20,7 @@ while (!WindowShouldClose()){
             if(caminitvar == 0){
                 Game::camera = { {0, 0}, {0, 0}, 0, 0 };
                 Game::camera.target = (Vector2){ gameState.player.position.x + 20, gameState.player.position.y + 20 };
-                Game::camera.offset = (Vector2){ Assets::screenWidth/2, Assets::screenHeight/2 };
+                Game::camera.offset = (Vector2){ Assets::screenWidth/2.0, Assets::screenHeight/2.0 };
                 Game::camera.rotation = 0.0f;
                 Game::camera.zoom = 1.5f;
                 caminitvar += 1;

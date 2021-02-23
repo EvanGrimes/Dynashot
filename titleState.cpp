@@ -9,8 +9,8 @@ void titleState::tick()
     mousePoint = GetMousePosition();
     startBtnAction = false;
     settBtnAction = false;
-    controlBtnAction = 0;
-    exitBtnAction = 0;
+    controlBtnAction = false;
+    exitBtnAction = false;
 
     tickStartBtn();
     tickSettBtn();

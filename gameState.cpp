@@ -45,7 +45,7 @@ void gameState::render() {
     ClearBackground(WHITE);
 
     map.DrawMap();
-    //DrawRectangleRec(playerRect, BLUE);
+    DrawRectangleRec(playerRect, BLUE);
     DrawTexture(getLastAnim(), player.position.x, player.position.y, WHITE);
 
 

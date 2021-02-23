@@ -6,43 +6,13 @@
 
 #IncludeRegexTransform: 
 
-E:/C++ Projects/Dynashot C++/Assets.h
-raylib.h
--
-iostream
--
-
-E:/C++ Projects/Dynashot C++/Game.cpp
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
-
-E:/C++ Projects/Dynashot C++/Game.h
-raylib.h
--
-titleState.h
-E:/C++ Projects/Dynashot C++/titleState.h
-gameState.h
-E:/C++ Projects/Dynashot C++/gameState.h
-settingsState.h
-E:/C++ Projects/Dynashot C++/settingsState.h
-controlsState.h
-E:/C++ Projects/Dynashot C++/controlsState.h
-
-E:/C++ Projects/Dynashot C++/Map.h
-Assets.h
-E:/C++ Projects/Dynashot C++/Assets.h
-Worlds.h
-E:/C++ Projects/Dynashot C++/Worlds.h
-fstream
--
-raylib.h
--
-string
--
-sstream
--
+E:/C++ Projects/Dynashot C++/MapReader.cpp
 MapReader.h
 E:/C++ Projects/Dynashot C++/MapReader.h
+raylib.h
+-
+cstdio
+-
 
 E:/C++ Projects/Dynashot C++/MapReader.h
 raylib.h
@@ -57,32 +27,4 @@ iostream
 -
 string
 -
-
-E:/C++ Projects/Dynashot C++/Worlds.h
-
-E:/C++ Projects/Dynashot C++/controlsState.h
-raylib.h
-E:/C++ Projects/Dynashot C++/raylib.h
-Assets.h
-E:/C++ Projects/Dynashot C++/Assets.h
-
-E:/C++ Projects/Dynashot C++/gameState.h
-raylib.h
-E:/C++ Projects/Dynashot C++/raylib.h
-Assets.h
-E:/C++ Projects/Dynashot C++/Assets.h
-Map.h
-E:/C++ Projects/Dynashot C++/Map.h
-
-E:/C++ Projects/Dynashot C++/settingsState.h
-raylib.h
-E:/C++ Projects/Dynashot C++/raylib.h
-Assets.h
-E:/C++ Projects/Dynashot C++/Assets.h
-
-E:/C++ Projects/Dynashot C++/titleState.h
-raylib.h
-E:/C++ Projects/Dynashot C++/raylib.h
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
 
