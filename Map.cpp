@@ -24,9 +24,6 @@ int lvlDef[20][25] = {
         {0, 0, 0, 0, 0, 0, 0, 0, 0,  2,  2,  2,  0,  0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
-int waterCollide = 0;
-
-
 Map::Map(){
     mapReader.readMapData();
     sourceRec.x = 0;
@@ -46,59 +43,58 @@ void Map::LoadMap(int arr[25][25]) {
 }
 
 void Map::DrawMap() {
-    int type = 0;
-
-    for(int x = 0; x < 23; ++x ){
-        for(int y = 0; y < 23; y++){
-        destRect.x = y * 32;
-        destRect.y = x * 32;
+    for (int x = 0; x < 24; ++x) {
+        for (int y = 0; y < 24; y++) {
+            destRect.x = y * 32;
+            destRect.y = x * 32;
 
 
-            switch(mapReader.mapTileData[x * 24 + y]) {
-            case '0':
-                DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '1':
-                DrawTextureRec(Assets::rock, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '2':
+            switch (mapReader.mapTileData[x * 24 + y]) {
+                case '0':
+                    DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '1':
+                    DrawTextureRec(Assets::rock, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '2':
 
-                DrawTextureRec(Assets::rockBig, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '3':
-                DrawTextureRec(Assets::bush, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '4':
-                DrawTextureRec(Assets::bushTall, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '5':
-                DrawTextureRec(Assets::bushSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '6':
-                DrawTextureRec(Assets::sign, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '7':
-                DrawTextureRec(Assets::tree, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '8':
-                DrawTextureRec(Assets::treeSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case '9':
-                DrawTextureRec(Assets::treeDead, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case 10:
-                DrawTextureRec(Assets::treeTrunk, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            case 'w':
+                    DrawTextureRec(Assets::rockBig, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '3':
+                    DrawTextureRec(Assets::bush, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '4':
+                    DrawTextureRec(Assets::bushTall, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '5':
+                    DrawTextureRec(Assets::bushSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '6':
+                    DrawTextureRec(Assets::sign, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '7':
+                    DrawTextureRec(Assets::tree, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '8':
+                    DrawTextureRec(Assets::treeSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case '9':
+                    DrawTextureRec(Assets::treeDead, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 10:
+                    DrawTextureRec(Assets::treeTrunk, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'w':
 
-                DrawTextureRec(Assets::water, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-            default:
-                //DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
-                break;
-        }
+                    DrawTextureRec(Assets::water, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                default:
+                    //DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+            }
         }
     }
+}
 
 
 
@@ -158,5 +154,5 @@ void Map::DrawMap() {
     }*/
 
 
-}
+
 

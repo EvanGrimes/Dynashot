@@ -68,14 +68,14 @@ namespace Assets
         buttonclick2 = LoadSound("../res/sounds/toggle_001.ogg");
         buttonclick3 = LoadSound("../res/sounds/minimize_004.ogg");
         buttonclick4 = LoadSound("../res/sounds/back.ogg");
-        titleSong = LoadMusicStream("../res/music/Staff_Roll.mp3");
+        titleSong = LoadMusicStream("../res/music/StaffRollV2.mp3");
         UnloadImage(startBtnImg);
         UnloadImage(startHoverImg);
         UnloadImage(sett_btnImg);
         UnloadImage(sett_btnImgHover);
     }
     void loadGame(){
-        map1 = LoadTexture("../res/textures/map1_1.0.1.png");
+        //map1 = LoadTexture("../res/textures/map1_1.0.1.png");
         //Player movement textures
         //Up
         player_up[0] = LoadTexture("../res/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png");
@@ -141,5 +141,39 @@ namespace Assets
         UnloadSound(buttonclick3);
         UnloadSound(buttonclick4);
         UnloadMusicStream(titleSong);
+    }
+
+    void unloadGame(){
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(player_up[x]);
+        }
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(player_down[x]);
+        }
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(player_left[x]);
+        }
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(player_right[x]);
+        }
+        UnloadTexture(player_idle_up);
+        UnloadTexture(player_idle_down);
+        UnloadTexture(player_idle_left);
+        UnloadTexture(player_idle_right);
+
+        UnloadTexture(bush);
+        UnloadTexture(bushSecret);
+        UnloadTexture(bushTall);
+        UnloadTexture(grass);
+        UnloadTexture(tree);
+        UnloadTexture(treeSecret);
+        UnloadTexture(treeTrunk);
+        UnloadTexture(treeDead);
+        UnloadTexture(rock);
+        UnloadTexture(rockBig);
+        UnloadTexture(sign);
+        UnloadTexture(water);
+
+
     }
 }

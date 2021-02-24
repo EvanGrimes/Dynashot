@@ -34,6 +34,9 @@ void gameState::tick() {
         if (currentFrame > 5) currentFrame = 0;
     }
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
+    //for(int x = 0; x < 1; x++){
+    //    printf("Player X: %f\n Player Y: %f\n", player.position.x, player.position.y);
+    //}
     //movePlayerCollider();
         Game::camera.target.x = player.position.x;
         Game::camera.target.y = player.position.y;
@@ -47,6 +50,7 @@ void gameState::render() {
     map.DrawMap();
     DrawRectangleRec(playerRect, BLUE);
     DrawTexture(getLastAnim(), player.position.x, player.position.y, WHITE);
+
 
 
 }

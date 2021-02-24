@@ -80,10 +80,10 @@ public:
     bool checkCollisionFuture() {
         for(count = 0; count < MapReader::mapSize; count++){
             if(lastAnim == "down"){
-                playerRect = { player.position.x + 10, player.position.y +14, 9, 15 };
+                playerRect = { player.position.x + 9, player.position.y +14, 8, 15 };
             }
             if(lastAnim == "up"){
-                playerRect = { player.position.x + 10, player.position.y + 14, 9, 15 };
+                playerRect = { player.position.x + 9, player.position.y + 14, 8, 15 };
             }
             if(lastAnim == "right"){
                 playerRect = {player.position.x + 9, player.position.y + 14, 9, 15};

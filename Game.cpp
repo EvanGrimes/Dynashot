@@ -8,7 +8,6 @@ void Game::loop(){
 
 while (!WindowShouldClose()){
     BeginDrawing();
-    DrawFPS(10,10);
     if(Assets::type == "title"){
         PlayMusicStream(Assets::titleSong);
         titleState.tick();
@@ -33,8 +32,8 @@ while (!WindowShouldClose()){
         }
         BeginMode2D(camera);
         gameState.tick();
-
         EndMode2D();
+        DrawFPS(10, 10);
     }
     if(Assets::type == "pause"){
         ClearBackground(RAYWHITE);
@@ -54,5 +53,11 @@ while (!WindowShouldClose()){
 
     EndDrawing();
     }
+if(gameinitvar == 0){
+    Assets::unloadTitle();
+}
+if(gameinitvar == 1){
+    Assets::unloadGame();
+}
 CloseWindow();
 }

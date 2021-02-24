@@ -8,6 +8,8 @@
 
 
 void settingsState::tick(){
+    backBtnAction = false;
+    backBtnState = 0;
     render();
 }
 
@@ -38,7 +40,7 @@ void settingsState::tickBackBtn(){
         SetSoundVolume(Assets::buttonclick4, 0.06);
         PlaySound(Assets::buttonclick4);
         // Just set a thingy here
-        std::cout << "Start button clicked\n" << std::endl;
+        std::cout << "Back button clicked\n" << std::endl;
         Assets::type = "title";
     }
 };

@@ -6,5 +6,5 @@ CXX_FLAGS = -static-libgcc -static-libstdc++ -static -g   -Wall -Wextra -std=c++
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/Dynashot-1.0.0.dir/includes_CXX.rsp
+CXX_INCLUDES = 
 

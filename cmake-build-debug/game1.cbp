@@ -34,7 +34,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="E:/C++ Projects/Dynashot C++/$PROJECT_DIR/res"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -56,7 +55,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="E:/C++ Projects/Dynashot C++/$PROJECT_DIR/res"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/raylib/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -127,18 +125,6 @@
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>
 		<Unit filename="E:/C++ Projects/Dynashot C++/MapReader.h">
-			<Option target="Dynashot-1.0.0"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/Dynashot C++/Tiles.cpp">
-			<Option target="Dynashot-1.0.0"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/Dynashot C++/Tiles.h">
-			<Option target="Dynashot-1.0.0"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/Dynashot C++/Worlds.cpp">
-			<Option target="Dynashot-1.0.0"/>
-		</Unit>
-		<Unit filename="E:/C++ Projects/Dynashot C++/Worlds.h">
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>
 		<Unit filename="E:/C++ Projects/Dynashot C++/controlsState.cpp">

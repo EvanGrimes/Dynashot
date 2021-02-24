@@ -93,12 +93,12 @@ clean: CMakeFiles/Dynashot-1.0.0.dir/clean
 CMakeFiles/Dynashot-1.0.0.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Dynashot-1.0.0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Dynashot-1.0.0"
 .PHONY : CMakeFiles/Dynashot-1.0.0.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Dynashot-1.0.0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" 12
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Dynashot-1.0.0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Dynashot-1.0.0.dir/rule

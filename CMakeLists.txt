@@ -12,13 +12,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 add_executable(Dynashot-1.0.0
-        Launcher.cpp Assets.cpp Assets.h titleState.cpp titleState.h gameState.cpp gameState.h Game.cpp Game.h controlsState.cpp controlsState.h settingsState.cpp settingsState.h Map.h Map.cpp Worlds.cpp Worlds.h MapReader.cpp MapReader.h Tiles.cpp Tiles.h)
+        Launcher.cpp Assets.cpp Assets.h titleState.cpp titleState.h gameState.cpp gameState.h Game.cpp Game.h controlsState.cpp controlsState.h settingsState.cpp settingsState.h Map.h Map.cpp MapReader.cpp MapReader.h)
 target_link_libraries(Dynashot-1.0.0 PRIVATE raylib)
 target_link_libraries(Dynashot-1.0.0 PRIVATE winmm)
 
 target_compile_options(Dynashot-1.0.0 PRIVATE -Wall -Wextra)
 target_link_options(Dynashot-1.0.0 PRIVATE -static-libgcc)
 target_link_options(Dynashot-1.0.0 PRIVATE -static-libstdc++)
-target_include_directories(Dynashot-1.0.0 PRIVATE $PROJECT_DIR/res)
-file(COPY res DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/res)
-target_link_directories(Dynashot-1.0.0 PRIVATE $PROJECT_DIR/res)
+#target_include_directories(Dynashot-1.0.0 PRIVATE $PROJECT_DIR/res)
+#file(COPY res DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/res)
+#target_link_directories(Dynashot-1.0.0 PRIVATE $PROJECT_DIR/res)

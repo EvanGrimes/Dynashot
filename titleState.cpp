@@ -1,4 +1,3 @@
-//#include "titleState.h"
 #include "Game.h"
 
 
@@ -11,6 +10,12 @@ void titleState::tick()
     settBtnAction = false;
     controlBtnAction = false;
     exitBtnAction = false;
+
+    startBtnState = 0;
+    settBtnState = 0;
+    controlBtnState = 0;
+    exitBtnState = 0;
+
 
     tickStartBtn();
     tickSettBtn();

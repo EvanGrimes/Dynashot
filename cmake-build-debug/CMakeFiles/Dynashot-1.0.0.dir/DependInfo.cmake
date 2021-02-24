@@ -9,8 +9,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/C++ Projects/Dynashot C++/Launcher.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj"
   "E:/C++ Projects/Dynashot C++/Map.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj"
   "E:/C++ Projects/Dynashot C++/MapReader.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj"
-  "E:/C++ Projects/Dynashot C++/Tiles.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.obj"
-  "E:/C++ Projects/Dynashot C++/Worlds.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/Worlds.cpp.obj"
   "E:/C++ Projects/Dynashot C++/controlsState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj"
   "E:/C++ Projects/Dynashot C++/gameState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj"
   "E:/C++ Projects/Dynashot C++/settingsState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj"
@@ -20,7 +18,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../$PROJECT_DIR/res"
   )
 
 # Targets to which this target links.

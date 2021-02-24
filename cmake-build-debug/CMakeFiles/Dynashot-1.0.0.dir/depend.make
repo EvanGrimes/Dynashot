@@ -39,11 +39,6 @@ CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj: ../MapReader.cpp
 CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj: ../MapReader.h
 CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj: ../Tiles.h
 
-CMakeFiles/Dynashot-1.0.0.dir/Tiles.cpp.obj: ../Tiles.cpp
-
-CMakeFiles/Dynashot-1.0.0.dir/Worlds.cpp.obj: ../Worlds.cpp
-CMakeFiles/Dynashot-1.0.0.dir/Worlds.cpp.obj: ../Worlds.h
-
 CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj: ../Assets.h
 CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj: ../controlsState.cpp
 CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj: ../controlsState.h
