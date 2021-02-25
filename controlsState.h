@@ -12,7 +12,6 @@ class controlsState {
 public:
 
     Rectangle backBtnBounds = { 0,550,50, 50 };
-    int backBtnState = 0;
     bool backBtnAction = false;
     Vector2 mousePoint = { 0.0f, 0.0f };
 

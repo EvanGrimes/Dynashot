@@ -1,6 +1,6 @@
 #include "Game.h"
 #include <raylib.h>
-#include <time.h>
+#include <ctime>
 
 class timer {
 private:
@@ -10,7 +10,7 @@ public:
         begTime = clock();
     }
 
-    unsigned long elapsedTime() {
+    [[nodiscard]] unsigned long elapsedTime() const {
         return ((unsigned long) clock() - begTime) / CLOCKS_PER_SEC;
     }
 };

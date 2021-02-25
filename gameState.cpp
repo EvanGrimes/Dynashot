@@ -1,23 +1,17 @@
 #include "gameState.h"
 #include "Game.h"
-#include "MapReader.h"
 
 
 EnvItem envItems[] = {
-{{0,   0,   1000, 400}, 0, LIGHTGRAY},
-{{0,   400, 1000, 200}, 1, GRAY},
-{{300, 200, 400,  10},  1, GRAY},
-{{250, 300, 100,  10},  1, GRAY},
-{{650, 300, 100,  10},  1, GRAY}
+{{0,   0,   1000, 400}, 0, /*LIGHTGRAY*/},
+{{0,   400, 1000, 200}, 1, /*GRAY*/},
+{{300, 200, 400,  10},  1, /*GRAY*/},
+{{250, 300, 100,  10},  1, /*GRAY*/},
+{{650, 300, 100,  10},  1, /*GRAY*/}
 };
 
 
 int envItemsLength = sizeof(envItems)/sizeof(envItems[0]);
-
-gameState gameState;
-//MapReader mapReader;
-
-
 
 void gameState::tick() {
     if(checkPausePress()){
@@ -44,18 +38,14 @@ void gameState::tick() {
 }
 
 void gameState::render() {
-
     ClearBackground(WHITE);
 
     map.DrawMap();
     DrawRectangleRec(playerRect, BLUE);
-    DrawTexture(getLastAnim(), player.position.x, player.position.y, WHITE);
-
-
-
+    DrawTexture(getLastAnim(), (int)player.position.x, (int)player.position.y, WHITE);
 }
 
-Texture2D gameState::getLastAnim(){
+Texture2D gameState::getLastAnim() const{
     if(Moving) {
         if (lastAnim == "up") {
             return Assets::player_up[currentFrame];

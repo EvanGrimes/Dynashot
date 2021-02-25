@@ -16,7 +16,7 @@ typedef struct Player {
 typedef struct EnvItem {
     Rectangle rect;
     int blocking;
-    Color color;
+    //Color color;
 } EnvItem;
 
 class gameState {
@@ -25,7 +25,7 @@ public:
     Player player;
     void tick();
     void render();
-    Texture2D getLastAnim();
+    [[nodiscard]] Texture2D getLastAnim() const;
     int framesCounter = 0;
     int framesSpeed = 8;
     int currentFrame = 0;
@@ -35,12 +35,12 @@ public:
     Rectangle playerRect = {  player.position.x , player.position.y + 20, 20, 20};
     void startPlayer() {
         player = {{0, 0}, 0};
-        player.position = (Vector2) {Assets::screenWidth/2, Assets::screenHeight/2};
+        player.position = (Vector2) {(float)Assets::screenWidth/2, (float)Assets::screenHeight/2};
         player.speed = 0;
     }
 
 
-    void movePlayerCollider(){
+    /*void movePlayerCollider(){
         for(count = 0; count < MapReader::mapSize; count++) {
             if (CheckCollisionRecs(map.mapReader.collision[count], playerRect)) {
                 if(!CheckCollisionPointRec((Vector2){player.position.x - 1, player.position.y}, map.mapReader.collision[count]))
@@ -62,9 +62,9 @@ public:
                 //}
             }
         }
-    }
+    }*/
 
-    bool checkCollision() {
+    /*bool checkCollision() {
         for(count = 0; count < MapReader::mapSize; count++){
             //playerRect = { player.position.x + 10, player.position.y + 10, 18, 20 };
 
@@ -75,7 +75,7 @@ public:
             DrawRectangleRec(map.mapReader.collision[count], RED);
         }
         return false;
-    }
+    }*/
 
     bool checkCollisionFuture() {
         for(count = 0; count < MapReader::mapSize; count++){
@@ -119,19 +119,19 @@ public:
         }
     }
 
-    void UpdatePlayer(Player *player, EnvItem *envItems, int envItemsLength, float delta)
+    void UpdatePlayer(Player *playerP, EnvItem *envItems, int envItemsLength, float delta)
     {
         Moving = false;
         if (IsKeyDown(KEY_W)){
             if(!IsKeyDown(KEY_S)) {
                 if(!checkCollisionFuture()) {
                     Moving = true;
-                    player->position.y -= PLAYER_HOR_SPD * delta;
+                    playerP->position.y -= PLAYER_HOR_SPD * delta;
                     lastAnim = "up";
                 }
                 if(checkCollisionFuture()) {
                     Moving = true;
-                    player->position.y += PLAYER_HOR_SPD * delta;
+                    playerP->position.y += PLAYER_HOR_SPD * delta;
                 }
 
                 //if(checkCollision()){
@@ -144,12 +144,12 @@ public:
             if(!IsKeyDown(KEY_W)) {
                 if(!checkCollisionFuture()) {
                     Moving = true;
-                    player->position.y += PLAYER_HOR_SPD * delta;
+                    playerP->position.y += PLAYER_HOR_SPD * delta;
                     lastAnim = "down";
                 }
                 if(checkCollisionFuture()) {
                     Moving = true;
-                    player->position.y -= PLAYER_HOR_SPD * delta;
+                    playerP->position.y -= PLAYER_HOR_SPD * delta;
                 }
                 //if(checkCollision()){
                 //    player->position.y -= PLAYER_HOR_SPD * delta + 5;
@@ -162,12 +162,12 @@ public:
             if(!IsKeyDown(KEY_D)) {
                 if(!checkCollisionFuture()) {
                     Moving = true;
-                    player->position.x -= PLAYER_HOR_SPD * delta;
+                    playerP->position.x -= PLAYER_HOR_SPD * delta;
                     lastAnim = "left";
                 }
                 if(checkCollisionFuture()) {
                     Moving = true;
-                    player->position.x += PLAYER_HOR_SPD * delta;
+                    playerP->position.x += PLAYER_HOR_SPD * delta;
                 }
                 ///if(checkCollision()){
                //     player->position.x += PLAYER_HOR_SPD * delta + 5;
@@ -181,13 +181,13 @@ public:
             if(!IsKeyDown(KEY_A)) {
                 if(!checkCollisionFuture()) {
                     Moving = true;
-                    player->position.x += PLAYER_HOR_SPD * delta;
+                    playerP->position.x += PLAYER_HOR_SPD * delta;
 
                     lastAnim = "right";
                 }
                 if(checkCollisionFuture()) {
                     Moving = true;
-                    player->position.x -= PLAYER_HOR_SPD * delta;
+                    playerP->position.x -= PLAYER_HOR_SPD * delta;
                 }
                 //if(checkCollision()){
                 //    player->position.x -= PLAYER_HOR_SPD * delta + 5;
@@ -198,14 +198,14 @@ public:
         for (int i = 0; i < envItemsLength; i++)
         {
             EnvItem *ei = envItems + i;
-            Vector2 *p = &(player->position);
+            Vector2 *p = &(playerP->position);
             if (ei->blocking &&
                 ei->rect.x <= p->x &&
                 ei->rect.x + ei->rect.width >= p->x &&
                 ei->rect.y >= p->y &&
-                ei->rect.y < p->y + player->speed*delta)
+                ei->rect.y < p->y + playerP->speed*delta)
             {
-                player->speed = 0.0f;
+                playerP->speed = 0.0f;
                 p->y = ei->rect.y;
             }
         }

@@ -2,7 +2,9 @@
 
 namespace Assets
 {
+
     std::string type;
+    Font comicSans;
     Texture2D splashScreen;
     Texture2D titleScreen;
     Image startBtnImg;
@@ -21,7 +23,7 @@ namespace Assets
     Sound buttonclick3;
     Sound buttonclick4;
     Music titleSong;
-    Texture2D map1;
+    //Texture2D map1;
     Texture2D player_up[6];
     Texture2D player_down[6];
     Texture2D player_left[6];
@@ -47,6 +49,7 @@ namespace Assets
     void loadTitle()
     {
         icon = LoadImage("../res/textures/icon.png");
+        comicSans = LoadFontEx("../res/fonts/comic.ttf", 32, nullptr, 250);
         splashScreen = LoadTexture("../res/textures/splashScreen1.0.0.png");
         titleScreen = LoadTexture("../res/textures/titlescreen/StartScreen1.0.2.png");
         startBtnImg = LoadImage("../res/textures/titlescreen/start.png");
@@ -122,7 +125,7 @@ namespace Assets
         rock = LoadTexture("../res/textures/tiles/rock.png"); //
         rockBig = LoadTexture("../res/textures/tiles/rock-monument.png");//
         sign = LoadTexture("../res/textures/tiles/sign.png"); //
-        water = LoadTexture("../res/textures/tiles/water.png");;
+        water = LoadTexture("../res/textures/tiles/water.png");
     }
 
     void unloadTitle(){
@@ -173,7 +176,6 @@ namespace Assets
         UnloadTexture(rockBig);
         UnloadTexture(sign);
         UnloadTexture(water);
-
-
+        UnloadFont(comicSans);
     }
 }

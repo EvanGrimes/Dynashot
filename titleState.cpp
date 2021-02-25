@@ -13,8 +13,6 @@ void titleState::tick()
 
     startBtnState = 0;
     settBtnState = 0;
-    controlBtnState = 0;
-    exitBtnState = 0;
 
 
     tickStartBtn();
@@ -27,19 +25,19 @@ void titleState::tick()
     DrawFPS(10, 10);
 
     if (startBtnState == 0) {
-        DrawTexture(Assets::startBtn, startBtnBounds.x, startBtnBounds.y, WHITE); // Draw button frame
+        DrawTexture(Assets::startBtn, (int)startBtnBounds.x, (int)startBtnBounds.y, WHITE); // Draw button frame
         //DrawTextureRec(Assets::startBtn, startSourceRec, (Vector2){ startBtnBounds.x, startBtnBounds.y }, WHITE);
     }
     if (startBtnState == 1) {
-        DrawTexture(Assets::startHover, startBtnBounds.x, startBtnBounds.y, WHITE); // Draw button frame
+        DrawTexture(Assets::startHover, (int)startBtnBounds.x, (int)startBtnBounds.y, WHITE); // Draw button frame
         //DrawTextureRec(Assets::startHover, startSourceRec, (Vector2){ startBtnBounds.x, startBtnBounds.y }, WHITE);
     }
     if (settBtnState == 0) {
-        DrawTexture(Assets::settBtn,settBtnBounds.x, settBtnBounds.y , WHITE); // Draw button frame
+        DrawTexture(Assets::settBtn,(int)settBtnBounds.x, (int)settBtnBounds.y , WHITE); // Draw button frame
         //DrawTextureRec(Assets::settBtn, settSourceRec, (Vector2){ settBtnBounds.x, settBtnBounds.y }, WHITE);
     }
     if (settBtnState == 1) {
-        DrawTexture(Assets::settHover,settBtnBounds.x, settBtnBounds.y, WHITE); // Draw button frame
+        DrawTexture(Assets::settHover,(int)settBtnBounds.x, (int)settBtnBounds.y, WHITE); // Draw button frame
         //DrawTextureRec(Assets::settHover, settSourceRec, (Vector2){ settBtnBounds.x, settBtnBounds.y }, WHITE);
     }
     //DrawRectangleRec(exitBtnBounds, RED);
@@ -93,12 +91,9 @@ void titleState::tickSettBtn() {
 void titleState::tickControlsBtn() {
     if(CheckCollisionPointRec(mousePoint, controlBtnBounds)){
         //printf("Controls has been touched!");
-        if(IsMouseButtonDown(MOUSE_LEFT_BUTTON)) controlBtnState = 2;
-        else controlBtnState = 1;
 
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) controlBtnAction = true;
     }
-    else controlBtnState = 0;
 
     if(controlBtnAction){
         SetSoundVolume(Assets::buttonclick2, 0.06);
@@ -110,12 +105,10 @@ void titleState::tickControlsBtn() {
 void titleState::tickExitBtn() {
     if(CheckCollisionPointRec(mousePoint, exitBtnBounds)){
         //printf("Controls has been touched!");
-        if(IsMouseButtonDown(MOUSE_LEFT_BUTTON)) exitBtnState = 2;
-        else exitBtnState = 1;
 
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) exitBtnAction = true;
     }
-    else exitBtnState = 0;
+
 
     if(exitBtnAction){
         SetSoundVolume(Assets::buttonclick3, 0.06);

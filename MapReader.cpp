@@ -25,8 +25,8 @@ void MapReader::setMapCollision() {
     destRect.x = destRect.y = 0;
     for(int x = 0; x < 24; ++x ){
         for(int y = 0; y < 24; y++){
-            destRect.x = y * 32;
-            destRect.y = x * 32;
+            destRect.x = (float)y * 32;
+            destRect.y = (float)x * 32;
             switch(mapTileData[x * 24 + y]) {
                 case '0':
                     //Grass
@@ -54,7 +54,7 @@ void MapReader::setMapCollision() {
                     count++;
                     collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
                     break;
-                    break;
+
                 case '4':
                     //Tall Bush
                     break;
@@ -67,7 +67,6 @@ void MapReader::setMapCollision() {
                     }
                     count++;
                     collision[count] = {destRect.x + 2, destRect.y + 4 ,25, 25};
-                    break;
                     break;
                 case '6':
                     //Sign

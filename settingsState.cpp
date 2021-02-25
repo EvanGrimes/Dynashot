@@ -9,7 +9,6 @@
 
 void settingsState::tick(){
     backBtnAction = false;
-    backBtnState = 0;
     render();
 }
 
@@ -29,12 +28,9 @@ void settingsState::tickBackBtn(){
     mousePoint = GetMousePosition();
     if (CheckCollisionPointRec(mousePoint, backBtnBounds)) {
         //printf("Back has been touched!\n");
-        if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) backBtnState = 2;
-        else backBtnState = 1;
 
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) backBtnAction = true;
     }
-    else backBtnState = 0;
 
     if (backBtnAction) {
         SetSoundVolume(Assets::buttonclick4, 0.06);

@@ -10,8 +10,6 @@ CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj
  E:/C++ Projects/Dynashot C++/Game.h
  E:/C++ Projects/Dynashot C++/Map.h
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
- E:/C++ Projects/Dynashot C++/Worlds.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
@@ -22,8 +20,6 @@ CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj
  E:/C++ Projects/Dynashot C++/Launcher.cpp
  E:/C++ Projects/Dynashot C++/Map.h
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
- E:/C++ Projects/Dynashot C++/Worlds.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
@@ -33,12 +29,9 @@ CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj
  E:/C++ Projects/Dynashot C++/Map.cpp
  E:/C++ Projects/Dynashot C++/Map.h
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
- E:/C++ Projects/Dynashot C++/Worlds.h
 CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj
  E:/C++ Projects/Dynashot C++/MapReader.cpp
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
 CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj
  E:/C++ Projects/Dynashot C++/Assets.h
  E:/C++ Projects/Dynashot C++/controlsState.cpp
@@ -48,8 +41,6 @@ CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj
  E:/C++ Projects/Dynashot C++/Game.h
  E:/C++ Projects/Dynashot C++/Map.h
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
- E:/C++ Projects/Dynashot C++/Worlds.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.cpp
  E:/C++ Projects/Dynashot C++/gameState.h
@@ -64,8 +55,6 @@ CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj
  E:/C++ Projects/Dynashot C++/Game.h
  E:/C++ Projects/Dynashot C++/Map.h
  E:/C++ Projects/Dynashot C++/MapReader.h
- E:/C++ Projects/Dynashot C++/Tiles.h
- E:/C++ Projects/Dynashot C++/Worlds.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
  E:/C++ Projects/Dynashot C++/settingsState.h

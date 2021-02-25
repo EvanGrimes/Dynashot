@@ -9,6 +9,7 @@ namespace Assets
     //General
     extern  std::string type;
     const int screenWidth = 1000, screenHeight = 600;
+    extern Font comicSans;
     //Title Screen Assets
     extern Image icon;
     extern Texture2D splashScreen;
@@ -30,7 +31,7 @@ namespace Assets
     extern Sound buttonclick4;  //Back button
     extern Music titleSong;
     //Game Assets
-    extern Texture2D map1;
+    //extern Texture2D map1;
     extern Texture2D player_up[6];
     extern Texture2D player_down[6];
     extern Texture2D player_left[6];

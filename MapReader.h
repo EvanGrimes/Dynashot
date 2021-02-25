@@ -2,7 +2,6 @@
 #define GAME1_MAPREADER_H
 
 #include <raylib.h>
-#include "Tiles.h"
 
 class MapReader {
 public:
@@ -13,10 +12,7 @@ public:
 
     void readMapData();
     void setMapCollision();
-
 private:
      Rectangle destRect = {0, 0, 0, 0};
 };
-
-
 #endif //GAME1_MAPREADER_H

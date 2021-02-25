@@ -5,7 +5,6 @@
 #ifndef GAME1_MAP_H
 #define GAME1_MAP_H
 #include "Assets.h"
-#include "Worlds.h"
 #include <fstream>
 #include <raylib.h>
 #include <string>
@@ -19,11 +18,11 @@ public:
     //~Map();
     MapReader mapReader;
     //void LoadMap(std::string path, int sizeX, int sizeY);
-    void LoadMap(int arr[25][25]);
+    // USE THIS ONE JUST IN CASE void LoadMap(int arr[25][25]);
     void DrawMap();
 private:
-    Rectangle sourceRec, destRect;
+    Rectangle sourceRec = {0, 0, 0, 0}, destRect = {0, 0, 0, 0};
 
-    int map[25][25];
+    //int map[25][25];
 };
 #endif //GAME1_MAP_H
