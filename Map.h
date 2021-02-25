@@ -14,13 +14,20 @@
 class Map{
 public:
 
+    //The map constructor
     Map();
     //~Map();
+
+    //The map reader object
     MapReader mapReader;
+
+    //Old unused map loading functions. If needed, use the second one.
+    //They both load arrays[25][25]
     //void LoadMap(std::string path, int sizeX, int sizeY);
     // USE THIS ONE JUST IN CASE void LoadMap(int arr[25][25]);
     void DrawMap();
 private:
+    //The used rectangles
     Rectangle sourceRec = {0, 0, 0, 0}, destRect = {0, 0, 0, 0};
 
     //int map[25][25];

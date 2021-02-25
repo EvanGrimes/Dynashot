@@ -3,7 +3,7 @@
 #include <cstdio>
 
 
-
+//Reads map data from a text file. (see res/worlds/test.txt for a example)
 void MapReader::readMapData() {
     char *buffer = LoadFileText("../res/worlds/test.txt");
     char *p = buffer;
@@ -21,10 +21,12 @@ void MapReader::readMapData() {
     UnloadFileText((unsigned char*)(buffer));
 }
 
+//Sets the map collision the same way the map is drawn
 void MapReader::setMapCollision() {
     destRect.x = destRect.y = 0;
     for(int x = 0; x < 24; ++x ){
         for(int y = 0; y < 24; y++){
+            //Mulitiplies the destRect so the collision boxes are on different tile areas
             destRect.x = (float)y * 32;
             destRect.y = (float)x * 32;
             switch(mapTileData[x * 24 + y]) {

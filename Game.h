@@ -6,6 +6,7 @@
 #include "settingsState.h"
 #include "controlsState.h"
 
+//It's just random leftover unused code from a LoadMap function
 /*void Map::LoadMap(int arr[20][25]) {
     for(row = 0; row < 20; row++){
         for (column = 0; column <25; column++){
@@ -17,13 +18,18 @@
 
 class Game {
 public:
+        //The game camera
         static Camera2D camera;
+        //The state loaded when game first starts
         titleState titleState;
+        //The actual state where you can play the game
         gameState gameState;
+        //A menu that shows all the controls (May in the future add the ability to change controls)
         controlsState controlsState;
+        //A state where you can change setting (WIP)
         settingsState settingsState;
 
-
+        //The main game loop
         void loop();
 };
 

@@ -2,9 +2,11 @@
 
 namespace Assets
 {
-
+    //All the variables that are used publicly are here.
     std::string type;
     Font comicSans;
+    //All the public assets are here and below
+    //Title screen assets
     Texture2D splashScreen;
     Texture2D titleScreen;
     Image startBtnImg;
@@ -23,7 +25,7 @@ namespace Assets
     Sound buttonclick3;
     Sound buttonclick4;
     Music titleSong;
-    //Texture2D map1;
+    //The game assets start here
     Texture2D player_up[6];
     Texture2D player_down[6];
     Texture2D player_left[6];
@@ -46,40 +48,54 @@ namespace Assets
     Texture2D water;
     Image icon;
 
+    //Loads all of the assets needed in the title screen as well as the window icon and the Comic Sans MS font
     void loadTitle()
     {
         icon = LoadImage("../res/textures/icon.png");
         comicSans = LoadFontEx("../res/fonts/comic.ttf", 32, nullptr, 250);
         splashScreen = LoadTexture("../res/textures/splashScreen1.0.0.png");
         titleScreen = LoadTexture("../res/textures/titlescreen/StartScreen1.0.2.png");
+        //Loads an image of the start button textures so that they can be resized to the proper size
         startBtnImg = LoadImage("../res/textures/titlescreen/start.png");
         startHoverImg = LoadImage("../res/textures/titlescreen/starthover.png");
+        //Actually resizes the start button images
         ImageResize(&startBtnImg, 255, 112);
         ImageResize(&startHoverImg, 255, 112);
+        //Sets the start button textures to the new reloaded images
         startBtn = LoadTextureFromImage(startBtnImg);
         startHover = LoadTextureFromImage(startHoverImg);
+        //Loads an image of the settings button textures so that they can be resized to the proper size
         sett_btnImg = LoadImage("../res/textures/titlescreen/settings.png");
         sett_btnImgHover = LoadImage("../res/textures/titlescreen/settingshover.png");
+        //Actually resizes the settings button images
         ImageResize(&sett_btnImg, 255, 112);
         ImageResize(&sett_btnImgHover, 255, 112);
+        //Sets the settings button textures to the new reloaded images
         settBtn = LoadTextureFromImage(sett_btnImg);
         settHover = LoadTextureFromImage(sett_btnImgHover);
+        //Loads the back button texture
         backBtn = LoadTexture("../res/textures/back.png");
+        //Loads the controls menu button texture
         controlsBtn = LoadTexture("../res/textures/mouse.png");
+        //Loads the exit button texture
         exitBtn = LoadTexture("../res/textures/exitLeft.png");
+        //Loads all the button clicks used
         buttonclick1 = LoadSound("../res/sounds/buttonclick1.mp3");
         buttonclick2 = LoadSound("../res/sounds/toggle_001.ogg");
         buttonclick3 = LoadSound("../res/sounds/minimize_004.ogg");
         buttonclick4 = LoadSound("../res/sounds/back.ogg");
+        //Loads a title screen song (Still WIP, but has a beta song currently)
         titleSong = LoadMusicStream("../res/music/StaffRollV2.mp3");
+        //Unloads all the resized button images
         UnloadImage(startBtnImg);
         UnloadImage(startHoverImg);
         UnloadImage(sett_btnImg);
         UnloadImage(sett_btnImgHover);
     }
+
+    //Loads all the game assets
     void loadGame(){
-        //map1 = LoadTexture("../res/textures/map1_1.0.1.png");
-        //Player movement textures
+        //Player movement animation textures
         //Up
         player_up[0] = LoadTexture("../res/sprites/hero/walk/hero-walk-back/hero-walk-back-1.png");
         player_up[1] = LoadTexture("../res/sprites/hero/walk/hero-walk-back/hero-walk-back-2.png");
@@ -128,6 +144,7 @@ namespace Assets
         water = LoadTexture("../res/textures/tiles/water.png");
     }
 
+    //Unloads all the no longer needed title screen assets
     void unloadTitle(){
         UnloadImage(icon);
         UnloadTexture(splashScreen);
@@ -146,24 +163,35 @@ namespace Assets
         UnloadMusicStream(titleSong);
     }
 
+    //Unloads all the game assets
     void unloadGame(){
+        //Goes through all 6 player up animations and unloads them
         for(int x = 0; x <= 6; x++){
             UnloadTexture(player_up[x]);
         }
+
+        //Goes through all 6 player down animations and unloads them
         for(int x = 0; x <= 6; x++){
             UnloadTexture(player_down[x]);
         }
+
+        //Goes through all 6 player left animations and unloads them
         for(int x = 0; x <= 6; x++){
             UnloadTexture(player_left[x]);
         }
+
+        //Goes through all 6 player right animations and unloads them
         for(int x = 0; x <= 6; x++){
             UnloadTexture(player_right[x]);
         }
+
+        //Unloads all the player idle animations
         UnloadTexture(player_idle_up);
         UnloadTexture(player_idle_down);
         UnloadTexture(player_idle_left);
         UnloadTexture(player_idle_right);
 
+        //Unloads all the tiles
         UnloadTexture(bush);
         UnloadTexture(bushSecret);
         UnloadTexture(bushTall);
