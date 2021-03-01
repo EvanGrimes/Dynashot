@@ -33,6 +33,11 @@ void gameState::tick() {
 
     //Checking for player movement
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
+    if(test == 3){
+        test = 0;
+        player.die();
+
+    }
 
     //Centering camera on the player
     Game::camera.target.x = player.position.x;
@@ -102,5 +107,6 @@ Texture2D gameState::getLastAnim() const{
 }
 
 
-
-
+void Player::die() {
+    Assets::type = "title";
+}

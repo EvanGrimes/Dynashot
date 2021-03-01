@@ -191,6 +191,33 @@ Assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Assets.cpp.s
 .PHONY : Assets.cpp.s
 
+EnemyAI.obj: EnemyAI.cpp.obj
+
+.PHONY : EnemyAI.obj
+
+# target to build an object file
+EnemyAI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj
+.PHONY : EnemyAI.cpp.obj
+
+EnemyAI.i: EnemyAI.cpp.i
+
+.PHONY : EnemyAI.i
+
+# target to preprocess a source file
+EnemyAI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.i
+.PHONY : EnemyAI.cpp.i
+
+EnemyAI.s: EnemyAI.cpp.s
+
+.PHONY : EnemyAI.s
+
+# target to generate assembly for a file
+EnemyAI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.s
+.PHONY : EnemyAI.cpp.s
+
 Game.obj: Game.cpp.obj
 
 .PHONY : Game.obj
@@ -421,6 +448,9 @@ help:
 	@echo ... Assets.obj
 	@echo ... Assets.i
 	@echo ... Assets.s
+	@echo ... EnemyAI.obj
+	@echo ... EnemyAI.i
+	@echo ... EnemyAI.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

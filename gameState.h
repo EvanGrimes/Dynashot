@@ -11,6 +11,7 @@
 typedef struct Player {
     Vector2 position;
     float speed;
+    void die();
 } Player;
 
 //EnvItem type. Don't really know what it does or why it's here
@@ -23,6 +24,7 @@ typedef struct EnvItem {
 
 class gameState {
 public:
+    int test = 0;
     //The map object. Used for drawing the map, loading the map, and collision detection
     Map map;
 
@@ -138,6 +140,7 @@ public:
                                            (Rectangle) {playerRect.x - 1, playerRect.y - 1, playerRect.width,
                                                         playerRect.height})) {
                         printf("COLLISION\n");
+                        test++;
                         return true;
                     }
                 }

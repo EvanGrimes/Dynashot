@@ -12,6 +12,11 @@ while (!WindowShouldClose()){
     BeginDrawing();
     //The title screen loop (Assets::type is just a string that has the state name)
     if(Assets::type == "title"){
+        if(gameinitvar == 1){
+            Assets::unloadGame();
+            Assets::loadTitle();
+            gameinitvar = 0;
+        }
         //Plays some title screen music (WIP)
         PlayMusicStream(Assets::titleSong);
         //Starts the title state loop

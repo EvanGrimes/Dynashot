@@ -50,6 +50,10 @@ void Map::DrawMap() {
     for (int x = 0; x < 24; ++x) {
         for (int y = 0; y < 24; y++) {
             //Every loop it moves the destRect with is where the tile draws to
+            //Yes, the destRect.x is Y * 32, not x.
+            // I don't know why and if it's reversed, it breaks the game.
+            // Same goes for destRect.y
+            // DO NOT TOUCH THEM.
             destRect.x = (float)y * 32;
             destRect.y = (float)x * 32;
 

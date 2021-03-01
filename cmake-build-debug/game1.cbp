@@ -106,6 +106,15 @@
 		<Unit filename="E:/C++ Projects/Dynashot C++/Assets.h">
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/EnemyAI.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/EnemyAI.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/EnemyObjects.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/Dynashot C++/Game.cpp">
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>
