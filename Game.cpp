@@ -1,4 +1,9 @@
 #include "Game.h"
+#define GRASSGREEN CLITERAL(Color){ 104, 159, 56, 255}     // Custom Grass Color
+
+void DrawFPS(int posX, int posY, Color color){
+    DrawText(TextFormat("%2i FPS", GetFPS()), posX, posY, 20, color);
+}
 
 
 Camera2D Game::camera;
@@ -6,11 +11,16 @@ void Game::loop(){
     //Just some variables so that it can initialize the game objects only once and have that happen when the loop is called
     int caminitvar = 0;
     int gameinitvar = 0;
+    Assets::type = "title";
 
 while (!WindowShouldClose()){
     //Starts drawing
     BeginDrawing();
     //The title screen loop (Assets::type is just a string that has the state name)
+
+    if(Assets::type == "gameOver"){
+
+    }
     if(Assets::type == "title"){
         if(gameinitvar == 1){
             Assets::unloadGame();
@@ -58,6 +68,8 @@ while (!WindowShouldClose()){
             //Stops the game assets from being loaded every frame
             gameinitvar += 1;
         }
+
+
         //Starts a 2D game mode (needed for the camera to work
         BeginMode2D(camera);
 
@@ -68,7 +80,7 @@ while (!WindowShouldClose()){
         EndMode2D();
 
         //Draws the FPS at the left corner of the screen (can only be drawn correctly after EndMode2D() is called
-        DrawFPS(10, 10);
+        DrawFPS(10, 10, RED);
     }
 
     //Starts the pause menu loop (still WIP)

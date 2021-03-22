@@ -1,5 +1,8 @@
 #include "gameState.h"
 #include "Game.h"
+#define GRASSGREEN CLITERAL(Color){ 104, 159, 56, 255}     // Custom Grass Color
+
+
 
 //Sets an envItem (Don't really know what those are for to be honest)
 EnvItem envItems[] = {
@@ -35,7 +38,7 @@ void gameState::tick() {
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
     if(test == 3){
         test = 0;
-        player.die();
+        Player::die();
 
     }
 
@@ -48,7 +51,10 @@ void gameState::tick() {
 
 void gameState::render() {
     //Clears screen so you don't see previous frames
-    ClearBackground(WHITE);
+    ClearBackground(GRASSGREEN);
+    //TODO: Re-enable the background after the debugging
+    //Draws the background for the textures without a background
+    //DrawTexture(Assets::background, 0, 0, WHITE);
 
     //Draws the map (Function in Map.cpp)
     map.DrawMap();

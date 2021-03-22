@@ -33,6 +33,7 @@ namespace Assets
     //Game Assets
 
     //extern Texture2D map1;
+
     extern Texture2D player_up[6];
     extern Texture2D player_down[6];
     extern Texture2D player_left[6];
@@ -42,10 +43,12 @@ namespace Assets
     extern Texture2D player_idle_left;
     extern Texture2D player_idle_right;
     //Tiles
+    extern Texture2D background;
     extern Texture2D bush;
     extern Texture2D bushSecret;
     extern Texture2D bushTall;
     extern Texture2D grass;
+    extern Image grassImage;
     extern Texture2D tree;
     extern Texture2D treeSecret;
     extern Texture2D treeTrunk;

@@ -34,10 +34,12 @@ namespace Assets
     Texture2D player_idle_down;
     Texture2D player_idle_left;
     Texture2D player_idle_right;
+    Texture2D background;
     Texture2D bush;
     Texture2D bushSecret;
     Texture2D bushTall;
     Texture2D grass;
+    Image grassImage;
     Texture2D tree;
     Texture2D treeSecret;
     Texture2D treeTrunk;
@@ -130,17 +132,19 @@ namespace Assets
         player_idle_left = LoadTexture("../res/sprites/hero/idle/hero-idle-side/hero-idle-side.png");
         player_idle_right = LoadTexture("../res/sprites/hero/idle/hero-idle-side/left.png");
         //Tiles
-        bush = LoadTexture("../res/textures/tiles/bush.png"); //
+        background = LoadTexture("../res/textures/Background.png");
+        bush = LoadTexture("../res/textures/tiles/bush2.png"); //
         bushSecret = LoadTexture("../res/textures/tiles/bushSecret.png"); //
         bushTall = LoadTexture("../res/textures/tiles/bush-tall.png"); //
-        grass = LoadTexture("../res/textures/tiles/grass.png"); //
+        grassImage = LoadImage("../res/textures/tiles/grass4.png"); //
+        grass = LoadTexture("../res/textures/tiles/grass4.png"); //
         tree = LoadTexture("../res/textures/tiles/tree-orange.png"); //
         treeSecret = LoadTexture("../res/textures/tiles/tree-pink.png"); //
         treeTrunk = LoadTexture("../res/textures/tiles/trunk.png"); //
         treeDead = LoadTexture("../res/textures/tiles/tree-dried.png"); //
-        rock = LoadTexture("../res/textures/tiles/rock.png"); //
+        rock = LoadTexture("../res/textures/tiles/rock2.png"); //
         rockBig = LoadTexture("../res/textures/tiles/rock-monument.png");//
-        sign = LoadTexture("../res/textures/tiles/sign.png"); //
+        sign = LoadTexture("../res/textures/tiles/sign2.png"); //
         water = LoadTexture("../res/textures/tiles/water.png");
     }
 

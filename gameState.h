@@ -11,7 +11,7 @@
 typedef struct Player {
     Vector2 position;
     float speed;
-    void die();
+    static void die();
 } Player;
 
 //EnvItem type. Don't really know what it does or why it's here
