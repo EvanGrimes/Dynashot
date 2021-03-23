@@ -148,6 +148,12 @@
 		<Unit filename="E:/C++ Projects/Dynashot C++/gameState.h">
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/pauseState.cpp">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
+		<Unit filename="E:/C++ Projects/Dynashot C++/pauseState.h">
+			<Option target="Dynashot-1.0.0"/>
+		</Unit>
 		<Unit filename="E:/C++ Projects/Dynashot C++/settingsState.cpp">
 			<Option target="Dynashot-1.0.0"/>
 		</Unit>

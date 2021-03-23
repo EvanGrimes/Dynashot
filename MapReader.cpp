@@ -81,6 +81,20 @@ void MapReader::setMapCollision() {
                     break;
                 case '6':
                     //Sign
+                    if(count == 0){
+                        collision[count] = {destRect.x + 2, destRect.y + 3,12.5, 14};
+                        count++;
+                        break;
+                    }
+                    count++;
+                    collision[count] = {destRect.x + 2, destRect.y + 3,12.5, 14};
+                    for(auto & temp : collision){
+                        if(CheckCollisionRecs(temp, (Rectangle) {collision[count].x - 5, collision[count].x, 25, 28})){
+                            collision[count] = {destRect.x + 4, destRect.y + 4,12.5, 14};
+                            break;
+                        }
+
+                    }
                     break;
                 case '7':
                     //Tree?

@@ -38,7 +38,7 @@ void gameState::tick() {
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
     if(test == 3){
         test = 0;
-        Player::die();
+        //Player::die();
 
     }
 
@@ -54,7 +54,7 @@ void gameState::render() {
     ClearBackground(GRASSGREEN);
     //TODO: Re-enable the background after the debugging
     //Draws the background for the textures without a background
-    //DrawTexture(Assets::background, 0, 0, WHITE);
+    DrawTexture(Assets::background, 0, 0, WHITE);
 
     //Draws the map (Function in Map.cpp)
     map.DrawMap();

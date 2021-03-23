@@ -49,7 +49,7 @@ namespace Assets
     extern Texture2D bushTall;
     extern Texture2D grass;
     extern Image grassImage;
-    extern Texture2D tree;
+    extern Texture2D tree[6];
     extern Texture2D treeSecret;
     extern Texture2D treeTrunk;
     extern Texture2D treeDead;

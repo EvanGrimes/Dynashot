@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj"
+  "CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj"
   "Dynashot-1.0.0.exe"

@@ -5,6 +5,7 @@
 #include "gameState.h"
 #include "settingsState.h"
 #include "controlsState.h"
+#include "pauseState.h"
 
 //It's just random leftover unused code from a LoadMap function
 /*void Map::LoadMap(int arr[20][25]) {
@@ -28,6 +29,8 @@ public:
         controlsState controlsState;
         //A state where you can change setting (WIP)
         settingsState settingsState;
+        //Pause menu state
+        pauseState pauseState;
 
         //The main game loop
         void loop();

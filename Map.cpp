@@ -90,8 +90,28 @@ void Map::DrawMap() {
                     break;
                 case '7':
                     //The tree will soon be broken into somewhere around 4 tiles
-                    //Tree
-                    DrawTextureRec(Assets::tree, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    //Tree Part 1
+                    DrawTextureRec(Assets::tree[0], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 't':
+                    //Tree Part 2
+                    DrawTextureRec(Assets::tree[1], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'y':
+                    //Tree Part 3
+                    DrawTextureRec(Assets::tree[2], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'u':
+                    //Tree Part 4
+                    DrawTextureRec(Assets::tree[3], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'i':
+                    //Tree Part 5
+                    DrawTextureRec(Assets::tree[4], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'o':
+                    //Tree Part 6
+                    DrawTextureRec(Assets::tree[5], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case '8':
                     //The secret tree will soon also be broken into somewhere around 4 tiles
@@ -111,6 +131,7 @@ void Map::DrawMap() {
                     //Water
                     DrawTextureRec(Assets::water, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
+
                 default:
                     //Just breaks out of statement if it doesn't find a valid tile
                     break;

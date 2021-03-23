@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/C++ Projects/Dynashot C++/MapReader.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj"
   "E:/C++ Projects/Dynashot C++/controlsState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj"
   "E:/C++ Projects/Dynashot C++/gameState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj"
+  "E:/C++ Projects/Dynashot C++/pauseState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"
   "E:/C++ Projects/Dynashot C++/settingsState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj"
   "E:/C++ Projects/Dynashot C++/titleState.cpp" "E:/C++ Projects/Dynashot C++/cmake-build-debug/CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj"
   )

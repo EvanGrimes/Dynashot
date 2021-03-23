@@ -380,6 +380,33 @@ gameState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.s
 .PHONY : gameState.cpp.s
 
+pauseState.obj: pauseState.cpp.obj
+
+.PHONY : pauseState.obj
+
+# target to build an object file
+pauseState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj
+.PHONY : pauseState.cpp.obj
+
+pauseState.i: pauseState.cpp.i
+
+.PHONY : pauseState.i
+
+# target to preprocess a source file
+pauseState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.i
+.PHONY : pauseState.cpp.i
+
+pauseState.s: pauseState.cpp.s
+
+.PHONY : pauseState.s
+
+# target to generate assembly for a file
+pauseState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.s
+.PHONY : pauseState.cpp.s
+
 settingsState.obj: settingsState.cpp.obj
 
 .PHONY : settingsState.obj
@@ -469,6 +496,9 @@ help:
 	@echo ... gameState.obj
 	@echo ... gameState.i
 	@echo ... gameState.s
+	@echo ... pauseState.obj
+	@echo ... pauseState.i
+	@echo ... pauseState.s
 	@echo ... settingsState.obj
 	@echo ... settingsState.i
 	@echo ... settingsState.s

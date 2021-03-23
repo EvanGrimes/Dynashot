@@ -40,7 +40,7 @@ namespace Assets
     Texture2D bushTall;
     Texture2D grass;
     Image grassImage;
-    Texture2D tree;
+    Texture2D tree[6];
     Texture2D treeSecret;
     Texture2D treeTrunk;
     Texture2D treeDead;
@@ -134,11 +134,16 @@ namespace Assets
         //Tiles
         background = LoadTexture("../res/textures/Background.png");
         bush = LoadTexture("../res/textures/tiles/bush2.png"); //
-        bushSecret = LoadTexture("../res/textures/tiles/bushSecret.png"); //
-        bushTall = LoadTexture("../res/textures/tiles/bush-tall.png"); //
+        bushSecret = LoadTexture("../res/textures/tiles/bushSecret2.png"); //
+        bushTall = LoadTexture("../res/textures/tiles/bush-tall2.png"); //
         grassImage = LoadImage("../res/textures/tiles/grass4.png"); //
         grass = LoadTexture("../res/textures/tiles/grass4.png"); //
-        tree = LoadTexture("../res/textures/tiles/tree-orange.png"); //
+        tree[0] = LoadTexture("../res/textures/tiles/tree/tree-pinkP1.png"); //
+        tree[1] = LoadTexture("../res/textures/tiles/tree/tree-pinkP2.png"); //
+        tree[2] = LoadTexture("../res/textures/tiles/tree/tree-pinkP3.png"); //
+        tree[3] = LoadTexture("../res/textures/tiles/tree/tree-pinkP4.png"); //
+        tree[4] = LoadTexture("../res/textures/tiles/tree/tree-pinkP5.png"); //
+        tree[5] = LoadTexture("../res/textures/tiles/tree/tree-pinkP6.png"); //
         treeSecret = LoadTexture("../res/textures/tiles/tree-pink.png"); //
         treeTrunk = LoadTexture("../res/textures/tiles/trunk.png"); //
         treeDead = LoadTexture("../res/textures/tiles/tree-dried.png"); //
@@ -189,6 +194,8 @@ namespace Assets
             UnloadTexture(player_right[x]);
         }
 
+
+
         //Unloads all the player idle animations
         UnloadTexture(player_idle_up);
         UnloadTexture(player_idle_down);
@@ -200,7 +207,9 @@ namespace Assets
         UnloadTexture(bushSecret);
         UnloadTexture(bushTall);
         UnloadTexture(grass);
-        UnloadTexture(tree);
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(tree[x]);
+        }
         UnloadTexture(treeSecret);
         UnloadTexture(treeTrunk);
         UnloadTexture(treeDead);

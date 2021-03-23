@@ -85,7 +85,7 @@ while (!WindowShouldClose()){
 
     //Starts the pause menu loop (still WIP)
     if(Assets::type == "pause"){
-        ClearBackground(RAYWHITE);
+        pauseState.tick();
     }
     //Starts the settings menu loop (also still WIP)
     if(Assets::type == "settings"){
