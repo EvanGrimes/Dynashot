@@ -116,7 +116,27 @@ void Map::DrawMap() {
                 case '8':
                     //The secret tree will soon also be broken into somewhere around 4 tiles
                     //Secret Tree
-                    DrawTextureRec(Assets::treeSecret, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    DrawTextureRec(Assets::treeSecret[0], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'g':
+                    //Tree Part 2
+                    DrawTextureRec(Assets::treeSecret[1], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'h':
+                    //Tree Part 3
+                    DrawTextureRec(Assets::treeSecret[2], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'j':
+                    //Tree Part 4
+                    DrawTextureRec(Assets::treeSecret[3], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'k':
+                    //Tree Part 5
+                    DrawTextureRec(Assets::treeSecret[4], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    break;
+                case 'l':
+                    //Tree Part 6
+                    DrawTextureRec(Assets::treeSecret[5], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case '9':
                     //The dead tree will soon also be broken into somewhere around 4 tiles

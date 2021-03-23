@@ -16,6 +16,7 @@ CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj
  E:/C++ Projects/Dynashot C++/MapReader.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
+ E:/C++ Projects/Dynashot C++/pauseState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
  E:/C++ Projects/Dynashot C++/titleState.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj
@@ -26,6 +27,7 @@ CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj
  E:/C++ Projects/Dynashot C++/MapReader.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
+ E:/C++ Projects/Dynashot C++/pauseState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
  E:/C++ Projects/Dynashot C++/titleState.h
 CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj
@@ -48,8 +50,13 @@ CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.cpp
  E:/C++ Projects/Dynashot C++/gameState.h
+ E:/C++ Projects/Dynashot C++/pauseState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
  E:/C++ Projects/Dynashot C++/titleState.h
+CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj
+ E:/C++ Projects/Dynashot C++/Assets.h
+ E:/C++ Projects/Dynashot C++/pauseState.cpp
+ E:/C++ Projects/Dynashot C++/pauseState.h
 CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj
  E:/C++ Projects/Dynashot C++/Assets.h
  E:/C++ Projects/Dynashot C++/settingsState.cpp
@@ -61,6 +68,7 @@ CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj
  E:/C++ Projects/Dynashot C++/MapReader.h
  E:/C++ Projects/Dynashot C++/controlsState.h
  E:/C++ Projects/Dynashot C++/gameState.h
+ E:/C++ Projects/Dynashot C++/pauseState.h
  E:/C++ Projects/Dynashot C++/settingsState.h
  E:/C++ Projects/Dynashot C++/titleState.cpp
  E:/C++ Projects/Dynashot C++/titleState.h

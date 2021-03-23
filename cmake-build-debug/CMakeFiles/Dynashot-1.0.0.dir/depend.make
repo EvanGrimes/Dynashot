@@ -15,6 +15,7 @@ CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../Map.h
 CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../MapReader.h
 CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../controlsState.h
 CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../gameState.h
+CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../pauseState.h
 CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../settingsState.h
 CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj: ../titleState.h
 
@@ -25,6 +26,7 @@ CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../Map.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../MapReader.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../controlsState.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../gameState.h
+CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../pauseState.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../settingsState.h
 CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj: ../titleState.h
 
@@ -47,8 +49,13 @@ CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../MapReader.h
 CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../controlsState.h
 CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../gameState.cpp
 CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../gameState.h
+CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../pauseState.h
 CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../settingsState.h
 CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj: ../titleState.h
+
+CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj: ../Assets.h
+CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj: ../pauseState.cpp
+CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj: ../pauseState.h
 
 CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj: ../Assets.h
 CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj: ../settingsState.cpp
@@ -60,6 +67,7 @@ CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../Map.h
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../MapReader.h
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../controlsState.h
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../gameState.h
+CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../pauseState.h
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../settingsState.h
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../titleState.cpp
 CMakeFiles/Dynashot-1.0.0.dir/titleState.cpp.obj: ../titleState.h

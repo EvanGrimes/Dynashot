@@ -41,7 +41,7 @@ namespace Assets
     Texture2D grass;
     Image grassImage;
     Texture2D tree[6];
-    Texture2D treeSecret;
+    Texture2D treeSecret[6];
     Texture2D treeTrunk;
     Texture2D treeDead;
     Texture2D rock;
@@ -144,7 +144,12 @@ namespace Assets
         tree[3] = LoadTexture("../res/textures/tiles/tree/tree-pinkP4.png"); //
         tree[4] = LoadTexture("../res/textures/tiles/tree/tree-pinkP5.png"); //
         tree[5] = LoadTexture("../res/textures/tiles/tree/tree-pinkP6.png"); //
-        treeSecret = LoadTexture("../res/textures/tiles/tree-pink.png"); //
+        treeSecret[0] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP1.png"); //
+        treeSecret[1] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP2.png"); //
+        treeSecret[2] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP3.png"); //
+        treeSecret[3] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP4.png"); //
+        treeSecret[4] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP5.png"); //
+        treeSecret[5] = LoadTexture("../res/textures/tiles/tree/secret/treeSecretP6.png"); //
         treeTrunk = LoadTexture("../res/textures/tiles/trunk.png"); //
         treeDead = LoadTexture("../res/textures/tiles/tree-dried.png"); //
         rock = LoadTexture("../res/textures/tiles/rock2.png"); //
@@ -210,7 +215,9 @@ namespace Assets
         for(int x = 0; x <= 6; x++){
             UnloadTexture(tree[x]);
         }
-        UnloadTexture(treeSecret);
+        for(int x = 0; x <= 6; x++){
+            UnloadTexture(treeSecret[x]);
+        }
         UnloadTexture(treeTrunk);
         UnloadTexture(treeDead);
         UnloadTexture(rock);
