@@ -24,6 +24,7 @@ typedef struct EnvItem {
 
 class gameState {
 public:
+    Vector2 mousePos;
     int test = 0;
     //The map object. Used for drawing the map, loading the map, and collision detection
     Map map;
@@ -130,14 +131,14 @@ public:
                 playerRect = {player.position.x + 9, player.position.y + 14, 9, 15};
             }
             if(lastAnim == "left"){
-                playerRect = {player.position.x + 11, player.position.y + 14, 9, 15};
+                playerRect = {player.position.x + 9, player.position.y + 14, 9, 15};
             }
             //Left and down direction collision
                 if(lastAnim == "left" || "down") {
                     //If it finds collision with the collision rectangles and the player rectangle minus 1 pixel
                     // (even though it's minus one pixel, it's still in front of the player) it will return true
                     if (CheckCollisionRecs(map.mapReader.collision[count],
-                                           (Rectangle) {playerRect.x - 1, playerRect.y - 1, playerRect.width,
+                                           (Rectangle) {playerRect.x + 1, playerRect.y - 1, playerRect.width,
                                                         playerRect.height})) {
                         printf("COLLISION\n");
                         test++;
@@ -148,7 +149,8 @@ public:
                 if(lastAnim == "right" || "up"){
                     //If it finds collision with the collision rectangles and the player rectangle plus 1 pixel
                     // (Plus one pixel is now in front of the player because of the opposite direction) it will return true
-                   if(CheckCollisionRecs(map.mapReader.collision[count], (Rectangle){playerRect.x + 1, playerRect.y + 0.1f, playerRect.width, playerRect.height})){
+                   if(CheckCollisionRecs(map.mapReader.collision[count],
+                                         (Rectangle){playerRect.x + 1, playerRect.y + 0.1f, playerRect.width, playerRect.height})){
                             printf("COLLISION\n");
                             return true;
                         }

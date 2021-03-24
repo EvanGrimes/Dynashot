@@ -21,6 +21,7 @@ while (!WindowShouldClose()){
     if(Assets::type == "gameOver"){
 
     }
+
     if(Assets::type == "title"){
         if(gameinitvar == 1){
             Assets::unloadGame();
@@ -79,7 +80,11 @@ while (!WindowShouldClose()){
         //Stops the 2D mode.
         EndMode2D();
 
-        //Draws the FPS at the left corner of the screen (can only be drawn correctly after EndMode2D() is called
+
+        //gameState.mousePos = GetMousePosition();
+        //DrawLine((int) gameState.playerRect.x, (int) gameState.playerRect.y,(int)  gameState.mousePos.x,(int) gameState.mousePos.y, WHITE);
+
+        //Draws the FPS at the left corner of the screen (can only be drawn correctly after EndMode2D() is called)
         DrawFPS(10, 10, RED);
     }
 

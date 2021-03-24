@@ -119,23 +119,23 @@ void Map::DrawMap() {
                     DrawTextureRec(Assets::treeSecret[0], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case 'g':
-                    //Tree Part 2
+                    //Secret Tree Part 2
                     DrawTextureRec(Assets::treeSecret[1], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case 'h':
-                    //Tree Part 3
+                    //Secret Tree Part 3
                     DrawTextureRec(Assets::treeSecret[2], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case 'j':
-                    //Tree Part 4
+                    //Secret Tree Part 4
                     DrawTextureRec(Assets::treeSecret[3], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case 'k':
-                    //Tree Part 5
+                    //Secret Tree Part 5
                     DrawTextureRec(Assets::treeSecret[4], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case 'l':
-                    //Tree Part 6
+                    //Secret Tree Part 6
                     DrawTextureRec(Assets::treeSecret[5], sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
                     break;
                 case '9':

@@ -23,6 +23,8 @@ void gameState::tick() {
         Assets::type = "pause";
     }
 
+
+
     //Advancing the animation frame counter
     float deltaTime = GetFrameTime();
     framesCounter++;
@@ -62,6 +64,8 @@ void gameState::render() {
     DrawRectangleRec(playerRect, BLUE);
     //Draws the player with the last animation (see the function below) and the index of the current frame (see function above)
     DrawTexture(getLastAnim(), (int)player.position.x, (int)player.position.y, WHITE);
+
+
 }
 
 Texture2D gameState::getLastAnim() const{

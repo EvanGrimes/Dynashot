@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/C++ Projects/Dynashot C++/Assets.cpp
-Assets.h
-E:/C++ Projects/Dynashot C++/Assets.h
-
 E:/C++ Projects/Dynashot C++/Assets.h
 raylib.h
 -
 iostream
 -
-
-E:/C++ Projects/Dynashot C++/Game.cpp
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
 
 E:/C++ Projects/Dynashot C++/Game.h
 raylib.h
@@ -33,18 +25,6 @@ controlsState.h
 E:/C++ Projects/Dynashot C++/controlsState.h
 pauseState.h
 E:/C++ Projects/Dynashot C++/pauseState.h
-
-E:/C++ Projects/Dynashot C++/Launcher.cpp
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
-raylib.h
--
-ctime
--
-
-E:/C++ Projects/Dynashot C++/Map.cpp
-Map.h
-E:/C++ Projects/Dynashot C++/Map.h
 
 E:/C++ Projects/Dynashot C++/Map.h
 Assets.h
@@ -63,10 +43,6 @@ E:/C++ Projects/Dynashot C++/MapReader.h
 E:/C++ Projects/Dynashot C++/MapReader.h
 raylib.h
 -
-
-E:/C++ Projects/Dynashot C++/controlsState.cpp
-controlsState.h
-E:/C++ Projects/Dynashot C++/controlsState.h
 
 E:/C++ Projects/Dynashot C++/controlsState.h
 raylib.h
@@ -88,10 +64,6 @@ E:/C++ Projects/Dynashot C++/Assets.h
 Map.h
 E:/C++ Projects/Dynashot C++/Map.h
 
-E:/C++ Projects/Dynashot C++/pauseState.cpp
-pauseState.h
-E:/C++ Projects/Dynashot C++/pauseState.h
-
 E:/C++ Projects/Dynashot C++/pauseState.h
 raylib.h
 -
@@ -100,19 +72,11 @@ E:/C++ Projects/Dynashot C++/Assets.h
 ctime
 -
 
-E:/C++ Projects/Dynashot C++/settingsState.cpp
-settingsState.h
-E:/C++ Projects/Dynashot C++/settingsState.h
-
 E:/C++ Projects/Dynashot C++/settingsState.h
 raylib.h
 E:/C++ Projects/Dynashot C++/raylib.h
 Assets.h
 E:/C++ Projects/Dynashot C++/Assets.h
-
-E:/C++ Projects/Dynashot C++/titleState.cpp
-Game.h
-E:/C++ Projects/Dynashot C++/Game.h
 
 E:/C++ Projects/Dynashot C++/titleState.h
 raylib.h
