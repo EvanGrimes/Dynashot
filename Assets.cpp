@@ -39,7 +39,6 @@ namespace Assets
     Texture2D bushSecret;
     Texture2D bushTall;
     Texture2D grass;
-    Image grassImage;
     Texture2D tree[6];
     Texture2D treeSecret[6];
     Texture2D treeTrunk;
@@ -48,6 +47,11 @@ namespace Assets
     Texture2D rockBig;
     Texture2D sign;
     Texture2D water;
+    Texture2D mole_up[4];
+    Texture2D mole_down[4];
+    Texture2D mole_left[4];
+    Texture2D mole_right[4];
+    Texture2D mole_idle[4];
     Image icon;
 
     //Loads all of the assets needed in the title screen as well as the window icon and the Comic Sans MS font
@@ -136,7 +140,6 @@ namespace Assets
         bush = LoadTexture("../res/textures/tiles/bush2.png"); //
         bushSecret = LoadTexture("../res/textures/tiles/bushSecret2.png"); //
         bushTall = LoadTexture("../res/textures/tiles/bush-tall2.png"); //
-        grassImage = LoadImage("../res/textures/tiles/grass4.png"); //
         grass = LoadTexture("../res/textures/tiles/grass4.png"); //
         tree[0] = LoadTexture("../res/textures/tiles/tree/tree-pinkP1.png"); //
         tree[1] = LoadTexture("../res/textures/tiles/tree/tree-pinkP2.png"); //
@@ -153,9 +156,37 @@ namespace Assets
         treeTrunk = LoadTexture("../res/textures/tiles/trunk.png"); //
         treeDead = LoadTexture("../res/textures/tiles/tree-dried.png"); //
         rock = LoadTexture("../res/textures/tiles/rock2.png"); //
-        rockBig = LoadTexture("../res/textures/tiles/rock-monument.png");//
+        //TODO: split up rock monument texture
+        //rockBig = LoadTexture("../res/textures/tiles/rock-monument.png");//
         sign = LoadTexture("../res/textures/tiles/sign2.png"); //
         water = LoadTexture("../res/textures/tiles/water.png");
+
+        //Mole Textures
+        mole_up[0] = LoadTexture("../res/sprites/mole/walk/mole-walk-back/mole-walk-back-1.png"); //
+        mole_up[1] = LoadTexture("../res/sprites/mole/walk/mole-walk-back/mole-walk-back-2.png"); //
+        mole_up[2] = LoadTexture("../res/sprites/mole/walk/mole-walk-back/mole-walk-back-3.png"); //
+        mole_up[3] = LoadTexture("../res/sprites/mole/walk/mole-walk-back/mole-walk-back-4.png"); //
+
+        mole_down[0] = LoadTexture("../res/sprites/mole/walk/mole-walk-front/mole-walk-front-1.png"); //
+        mole_down[1] = LoadTexture("../res/sprites/mole/walk/mole-walk-front/mole-walk-front-2.png"); //
+        mole_down[2] = LoadTexture("../res/sprites/mole/walk/mole-walk-front/mole-walk-front-3.png"); //
+        mole_down[3] = LoadTexture("../res/sprites/mole/walk/mole-walk-front/mole-walk-front-4.png"); //
+
+        mole_right[0] = LoadTexture("../res/sprites/mole/walk/mole-walk-side/mole-walk-side-1.png"); //
+        mole_right[1] = LoadTexture("../res/sprites/mole/walk/mole-walk-side/mole-walk-side-2.png"); //
+        mole_right[2] = LoadTexture("../res/sprites/mole/walk/mole-walk-side/mole-walk-side-3.png"); //
+        mole_right[3] = LoadTexture("../res/sprites/mole/walk/mole-walk-side/mole-walk-side-4.png"); //
+
+        mole_left[0] = LoadTexture("../res/sprites/mole/walk/left/left1.png"); //
+        mole_left[1] = LoadTexture("../res/sprites/mole/walk/left/left2.png"); //
+        mole_left[2] = LoadTexture("../res/sprites/mole/walk/left/left3.png"); //
+        mole_left[3] = LoadTexture("../res/sprites/mole/walk/left/left4.png"); //
+
+        mole_idle[0] = LoadTexture("../res/sprites/mole/idle/mole-idle-back.png");
+        mole_idle[1] = LoadTexture("../res/sprites/mole/idle/mole-idle-front.png");
+        mole_idle[2] = LoadTexture("../res/sprites/mole/idle/mole-idle-side.png");
+        mole_idle[3] = LoadTexture("../res/sprites/mole/idle/left.png");
+
     }
 
     //Unloads all the no longer needed title screen assets

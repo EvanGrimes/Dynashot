@@ -37,6 +37,7 @@ void MapReader::setMapCollision() {
                     //Rock
                     if(count == 0){
                         collision[count] = {destRect.x + 2, destRect.y + 3,25, 25};
+                        solid[count] = true;
                         count++;
                         break;
                     }
@@ -45,13 +46,7 @@ void MapReader::setMapCollision() {
                     }
                     count++;
                     collision[count] = {destRect.x + 2, destRect.y + 3,25, 25};
-                    for(auto & temp : collision){
-                        if(CheckCollisionRecs(temp, (Rectangle) {collision[count].x - 5, collision[count].x, 25, 28})){
-                            collision[count] = {destRect.x + 4, destRect.y + 4,25, 25};
-                            break;
-                        }
 
-                    }
 
 
                     break;

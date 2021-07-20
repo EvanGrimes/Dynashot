@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Dynashot-1.0.0.dir/Assets.cpp.obj"
-  "CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj"
+  "CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/Game.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/Launcher.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj"
+  "CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/gameState.cpp.obj"
   "CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"

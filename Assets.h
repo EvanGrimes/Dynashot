@@ -34,6 +34,7 @@ namespace Assets
 
     //extern Texture2D map1;
 
+    //Player Textures
     extern Texture2D player_up[6];
     extern Texture2D player_down[6];
     extern Texture2D player_left[6];
@@ -42,6 +43,15 @@ namespace Assets
     extern Texture2D player_idle_down;
     extern Texture2D player_idle_left;
     extern Texture2D player_idle_right;
+
+    //Mole Textures
+    extern Texture2D mole_up[4];
+    extern Texture2D mole_down[4];
+    extern Texture2D mole_left[4];
+    extern Texture2D mole_right[4];
+    extern Texture2D mole_idle[4];
+
+
     //Tiles
     extern Texture2D background;
     extern Texture2D bush;

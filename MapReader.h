@@ -1,16 +1,24 @@
 #ifndef GAME1_MAPREADER_H
 #define GAME1_MAPREADER_H
 
+//#include "EnemyAI.h"
+
 #include <raylib.h>
+#include <iostream>
+#include <vector>
 
 class MapReader {
 public:
+
     //The map size. Used instead of hard coding every instance of it
     static const int mapSize = 24 * 24;
 
     //This holds the actual map data in an array.
     //The switch statement is based off of it
     char mapTileData[mapSize] = {0};
+
+    //Bool used for Enemy AI?
+    bool solid[mapSize] = {true};
 
     //The actual collision boxes
     Rectangle collision[24 * 24] = {{0, 0, 35, 35}};

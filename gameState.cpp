@@ -40,7 +40,7 @@ void gameState::tick() {
     UpdatePlayer(&player, envItems, envItemsLength, deltaTime);
     if(test == 3){
         test = 0;
-        //Player::die();
+        Player::die();
 
     }
 
@@ -60,10 +60,14 @@ void gameState::render() {
 
     //Draws the map (Function in Map.cpp)
     map.DrawMap();
+
     //Draws the player collision box for debug reasons :)
     DrawRectangleRec(playerRect, BLUE);
     //Draws the player with the last animation (see the function below) and the index of the current frame (see function above)
     DrawTexture(getLastAnim(), (int)player.position.x, (int)player.position.y, WHITE);
+
+
+
 
 
 }
@@ -118,5 +122,5 @@ Texture2D gameState::getLastAnim() const{
 
 
 void Player::die() {
-    Assets::type = "title";
+    printf("paused");
 }

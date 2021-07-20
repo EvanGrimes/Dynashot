@@ -193,22 +193,9 @@ CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.s"
 	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\Dynashot C++\MapReader.cpp" -o CMakeFiles\Dynashot-1.0.0.dir\MapReader.cpp.s
 
-CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj: CMakeFiles/Dynashot-1.0.0.dir/flags.make
-CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj: ../EnemyAI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj"
-	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dynashot-1.0.0.dir\EnemyAI.cpp.obj -c "E:\C++ Projects\Dynashot C++\EnemyAI.cpp"
-
-CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.i"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\Dynashot C++\EnemyAI.cpp" > CMakeFiles\Dynashot-1.0.0.dir\EnemyAI.cpp.i
-
-CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.s"
-	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\Dynashot C++\EnemyAI.cpp" -o CMakeFiles\Dynashot-1.0.0.dir\EnemyAI.cpp.s
-
 CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj: CMakeFiles/Dynashot-1.0.0.dir/flags.make
 CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj: ../pauseState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"
 	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dynashot-1.0.0.dir\pauseState.cpp.obj -c "E:\C++ Projects\Dynashot C++\pauseState.cpp"
 
 CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.i: cmake_force
@@ -218,6 +205,32 @@ CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.i: cmake_force
 CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.s"
 	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\Dynashot C++\pauseState.cpp" -o CMakeFiles\Dynashot-1.0.0.dir\pauseState.cpp.s
+
+CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj: CMakeFiles/Dynashot-1.0.0.dir/flags.make
+CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj: ../Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj"
+	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dynashot-1.0.0.dir\Enemy.cpp.obj -c "E:\C++ Projects\Dynashot C++\Enemy.cpp"
+
+CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.i"
+	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\Dynashot C++\Enemy.cpp" > CMakeFiles\Dynashot-1.0.0.dir\Enemy.cpp.i
+
+CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.s"
+	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\Dynashot C++\Enemy.cpp" -o CMakeFiles\Dynashot-1.0.0.dir\Enemy.cpp.s
+
+CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj: CMakeFiles/Dynashot-1.0.0.dir/flags.make
+CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj: ../Mole.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj"
+	C:\raylib\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dynashot-1.0.0.dir\Mole.cpp.obj -c "E:\C++ Projects\Dynashot C++\Mole.cpp"
+
+CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.i"
+	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\C++ Projects\Dynashot C++\Mole.cpp" > CMakeFiles\Dynashot-1.0.0.dir\Mole.cpp.i
+
+CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.s"
+	C:\raylib\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\C++ Projects\Dynashot C++\Mole.cpp" -o CMakeFiles\Dynashot-1.0.0.dir\Mole.cpp.s
 
 # Object files for target Dynashot-1.0.0
 Dynashot__1_0_0_OBJECTS = \
@@ -230,8 +243,9 @@ Dynashot__1_0_0_OBJECTS = \
 "CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj" \
 "CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj" \
 "CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj" \
-"CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj" \
-"CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj"
+"CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj" \
+"CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj" \
+"CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj"
 
 # External object files for target Dynashot-1.0.0
 Dynashot__1_0_0_EXTERNAL_OBJECTS =
@@ -245,13 +259,14 @@ Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/controlsState.cpp.obj
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/settingsState.cpp.obj
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/Map.cpp.obj
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.obj
-Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/pauseState.cpp.obj
+Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj
+Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/build.make
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/linklibs.rsp
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/objects1.rsp
 Dynashot-1.0.0.exe: CMakeFiles/Dynashot-1.0.0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Dynashot-1.0.0.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\C++ Projects\Dynashot C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Dynashot-1.0.0.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Dynashot-1.0.0.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

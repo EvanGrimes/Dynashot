@@ -191,32 +191,32 @@ Assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Assets.cpp.s
 .PHONY : Assets.cpp.s
 
-EnemyAI.obj: EnemyAI.cpp.obj
+Enemy.obj: Enemy.cpp.obj
 
-.PHONY : EnemyAI.obj
+.PHONY : Enemy.obj
 
 # target to build an object file
-EnemyAI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.obj
-.PHONY : EnemyAI.cpp.obj
+Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.obj
+.PHONY : Enemy.cpp.obj
 
-EnemyAI.i: EnemyAI.cpp.i
+Enemy.i: Enemy.cpp.i
 
-.PHONY : EnemyAI.i
+.PHONY : Enemy.i
 
 # target to preprocess a source file
-EnemyAI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.i
-.PHONY : EnemyAI.cpp.i
+Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.i
+.PHONY : Enemy.cpp.i
 
-EnemyAI.s: EnemyAI.cpp.s
+Enemy.s: Enemy.cpp.s
 
-.PHONY : EnemyAI.s
+.PHONY : Enemy.s
 
 # target to generate assembly for a file
-EnemyAI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/EnemyAI.cpp.s
-.PHONY : EnemyAI.cpp.s
+Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Enemy.cpp.s
+.PHONY : Enemy.cpp.s
 
 Game.obj: Game.cpp.obj
 
@@ -325,6 +325,33 @@ MapReader.s: MapReader.cpp.s
 MapReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/MapReader.cpp.s
 .PHONY : MapReader.cpp.s
+
+Mole.obj: Mole.cpp.obj
+
+.PHONY : Mole.obj
+
+# target to build an object file
+Mole.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.obj
+.PHONY : Mole.cpp.obj
+
+Mole.i: Mole.cpp.i
+
+.PHONY : Mole.i
+
+# target to preprocess a source file
+Mole.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.i
+.PHONY : Mole.cpp.i
+
+Mole.s: Mole.cpp.s
+
+.PHONY : Mole.s
+
+# target to generate assembly for a file
+Mole.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dynashot-1.0.0.dir\build.make CMakeFiles/Dynashot-1.0.0.dir/Mole.cpp.s
+.PHONY : Mole.cpp.s
 
 controlsState.obj: controlsState.cpp.obj
 
@@ -475,9 +502,9 @@ help:
 	@echo ... Assets.obj
 	@echo ... Assets.i
 	@echo ... Assets.s
-	@echo ... EnemyAI.obj
-	@echo ... EnemyAI.i
-	@echo ... EnemyAI.s
+	@echo ... Enemy.obj
+	@echo ... Enemy.i
+	@echo ... Enemy.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
@@ -490,6 +517,9 @@ help:
 	@echo ... MapReader.obj
 	@echo ... MapReader.i
 	@echo ... MapReader.s
+	@echo ... Mole.obj
+	@echo ... Mole.i
+	@echo ... Mole.s
 	@echo ... controlsState.obj
 	@echo ... controlsState.i
 	@echo ... controlsState.s

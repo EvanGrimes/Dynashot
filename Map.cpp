@@ -1,5 +1,5 @@
 #include "Map.h"
-
+int temp;
 //An old unused map
 /*int lvlDef[20][25] = {
         {0, 0, 0, 0, 0, 0, 0, 0, 0,  0,  0,  0,  0,  0,  0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -63,6 +63,7 @@ void Map::DrawMap() {
                 case '0':
                     //Grass
                     DrawTextureRec(Assets::grass, sourceRec, (Vector2) {destRect.x, destRect.y}, WHITE);
+                    //DrawRectangleRec(mapReader.nodes[temp].tempRender, RED);
                     break;
                 case '1':
                     //Rock

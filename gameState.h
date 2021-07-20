@@ -6,6 +6,7 @@
 #include "raylib.h"
 #include "Assets.h"
 #include "Map.h"
+#include "Mole.h"
 
 //The player type. Just holds it position and speed
 typedef struct Player {
@@ -24,6 +25,8 @@ typedef struct EnvItem {
 
 class gameState {
 public:
+    int temp = 0;
+
     Vector2 mousePos;
     int test = 0;
     //The map object. Used for drawing the map, loading the map, and collision detection
@@ -141,7 +144,7 @@ public:
                                            (Rectangle) {playerRect.x + 1, playerRect.y - 1, playerRect.width,
                                                         playerRect.height})) {
                         printf("COLLISION\n");
-                        test++;
+                        //test++;
                         return true;
                     }
                 }
@@ -174,7 +177,6 @@ public:
     //Checks the player movement and also calls the collision detection
     void UpdatePlayer(Player *playerP, EnvItem *envItems, int envItemsLength, float delta)
     {
-
         //Sets moving to false so that when not moving, the idle animations play
         Moving = false;
 
